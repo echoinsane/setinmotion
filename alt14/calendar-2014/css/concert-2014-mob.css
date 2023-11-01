@@ -1,0 +1,178 @@
+﻿
+.main .week .white .pop_up {
+	background:#ffffff;
+	width:770px;
+	height:560px;
+	display:none;
+	padding:0px;
+	font-family: arial, sans-serif;
+	font-size:16px;
+	color:#000000;
+	z-index:20;
+	float:none;
+	border:0;
+	position:absolute;
+}
+#horse_the_band_desc {
+	top:-225px;
+	left:153px;
+}
+#armin_van_buuren_desc {
+	top:-225px;
+	left:-617px;
+}
+#flyleaf_desc {
+	top:-337px;
+	left:-309px;
+}
+#wodb_desc {
+	top:-337px;
+	left:-617px;
+	
+}
+#iktpq_desc {
+	top:-449px;
+	left:-771px;
+	
+}
+#eskimo_desc {
+	top:-112px;
+	left:-154px;
+}
+#pirate_station_desc {
+	top:-225px;
+	left:-617px;
+}
+#h_h_desc {
+	top:-449px;
+	left:0;
+}
+#es_desc {
+	top:-112px;
+	left:0;
+}
+#blue_october_desc {
+	top:-112px;
+	left:-309px;
+}
+#ennio_desc {
+	top:-225px;
+	left:-309px;
+}
+#apollo_desc {
+	top:-113px;
+	left:-617px;
+}
+#dba_desc {
+	top:-337px;
+	left:-463px;
+}
+#etf_desc {
+	top:-449px;
+	left:-309px;
+}
+#lb_desc {
+	top:-449px;
+	left:-463px;
+}
+#bmth_desc {
+	top:-112px;
+	left:-771px;
+}
+#pod_desc {
+	top:-337px;
+	left:0;
+}
+.horse_the_band {
+	background:url(../images/bg-dark1.png);
+}
+.armin_van_buuren {
+	background:url(../images/bg-dark1.png);
+}
+
+
+
+.title-1 {
+	margin-left:-257px;
+}
+.title-2 {
+	margin-left:-222px;
+}
+.title-3 {
+	margin-left:-144px;
+}
+.title-4 {
+	margin-left:-317px;
+}
+.title-5 {
+	margin-left:-257px;
+}
+.title-6 {
+	margin-left:-190px;
+}
+.title-7 {
+	margin-left:-302px;
+}
+.title-8 {
+	margin-left:-330px;
+}
+.title-9 {
+	margin-left:-214px;
+}
+.title-10 {
+	margin-left:-202px;
+}
+.title-11{
+	margin-left:-291px;
+}
+.title-12{
+	margin-left:-275px;
+}
+
+
+
+
+
+
+
+
+.dp {
+	background-image:url(../images/dp.jpg); 
+	display: block;
+}
+.daysofstatic {
+	background-image:url(../images/65.jpg); 
+}
+
+.caliban {
+	background-image: url(../images/Caliban.jpg) ;
+}
+.wodb {
+	background-image: url(../images/wodb.jpg) ;
+}
+.kse {
+	background-image: url(../images/kse1.jpg) ;
+}
+
+.moorcheba {
+	background-image: url(../images/morcheeba.jpg) ;
+}
+.wcar {
+	background-image: url(../images/wcar.jpg) ;
+}
+.bfmv {
+	background-image: url(../images/bfmv.jpg) ;
+}
+.ymas {
+	background-image: url(../images/ymas.jpg) ;
+}
+.apocalyptica {
+	background-image: url(../images/apo.jpg) ;
+}
+.stm {
+	background-image: url(../images/30stm.jpg) ;
+}
+
+.aaa {
+	background-image: url(../images/aaa.jpg) ;
+}

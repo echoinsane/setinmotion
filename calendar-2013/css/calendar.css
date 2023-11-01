@@ -1,0 +1,94 @@
+img {
+	border:0;
+}
+.year {
+	font-size:36px;
+}
+.main {
+	padding:5px;
+	width:770px;
+	margin:0 auto;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-style:italic;
+	font-size:43px;
+}
+.main p {
+	margin:0;
+}
+.main .first {
+	border-bottom:2px solid black;
+	margin:0;
+}
+.month {
+	width:355px;
+	height:200px;
+	margin:15px;
+	float:left;
+	-moz-box-shadow: 0 0 5px 0px #000;
+	-webkit-box-shadow: 0 0 5px 0px #000;
+	box-shadow: 0 0 5px 0px #000;
+}
+.month a{
+	display:block;
+}
+.clear {
+	clear:both;
+}
+.august {
+	background:url(../images/august1.jpg);
+}
+.august .text {
+	padding:82px 92px 81px 93px;
+}
+.september {
+	background:url(../images/september1.jpg);
+}
+.september .text {
+	padding:82px 63px 81px;
+}
+.october {
+	background:url(../images/october1.jpg);
+}
+.october .text {
+	padding:82px 72px 81px 73px;
+}
+.november {
+	background:url(../images/november1.jpg);
+}
+.november .text {
+	padding:82px 57px 81px;
+}
+.december {
+	background:url(../images/december.jpg);
+}
+.december .text {
+	padding:82px 66px 81px;
+}
+.text {
+	-webkit-transition: 0.5s ease;
+	transition: 0.5s ease;
+	cursor:pointer;
+	background:url(../images/black.png);
+	opacity:0;
+}
+.text:hover {
+	opacity:1.0;
+}
+.last {
+	border-top:2px solid black;
+	margin:0;
+}
+.phoenix {
+	display:block;
+	margin:0 auto;
+	text-align:center;
+	opacity:0.3;
+	-webkit-transition: 0.5s ease;
+	transition: 0.5s ease;
+}
+.phoenix:hover {
+	opacity:1.0;
+}
+.phoenix img {
+	width:270px;
+}

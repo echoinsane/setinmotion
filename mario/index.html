@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lux Garant</title>
+    <link href="css/main.css" rel="stylesheet" media="all">
+    <link href="css/uniform.default.css" rel="stylesheet" media="all">
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu:400,500,400italic,500italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <meta http-equiv="content-type" content="text/html; charset=windows-1251">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+    <script src="js/jquery.uniform.js"></script>
+    <script src="js/hover.js"></script>
+    <script src="js/jquery.slides.js"></script>
+    <script type="text/javascript">
+        // On load, style typical form elements
+        $(function () {
+            $(".main .content .brand .brand_content select").uniform();
+            $('div.selector').css('width','132px');
+            $('.block:nth-child(3n+1)').css('margin-right','0');
+            $('.news_block:nth-child(3n+2)').css('margin-right','0');
+        });
+
+        $(function() {
+            $('#slides').slidesjs({
+                width: 940,
+                height: 270,
+                navigation: {
+                    active: true,
+                    // [boolean] Generates next and previous buttons.
+                    // You can set to false and use your own buttons.
+                    // User defined buttons must have the following:
+                    // previous button: class="slidesjs-previous slidesjs-navigation"
+                    // next button: class="slidesjs-next slidesjs-navigation"
+                    effect: "slide"
+                    // [string] Can be either "slide" or "fade".
+                },
+                play: {
+                    active: false,
+                    // [boolean] Generate the play and stop buttons.
+                    // You cannot use your own buttons. Sorry.
+                    effect: "slide",
+                    // [string] Can be either "slide" or "fade".
+                    interval: 4000,
+                    // [number] Time spent on each slide in milliseconds.
+                    auto: true,
+                    // [boolean] Start playing the slideshow on load.
+                    swap: 'hide',
+                    // [boolean] show/hide stop and play buttons
+                    pauseOnHover: false,
+                    // [boolean] pause a playing slideshow on hover
+                    restartDelay: 2500
+                    // [number] restart delay on inactive slideshow
+                }
+            });
+        });
+    </script>
+
+</head>
+<body>
+    <div class="header">
+        <div class="fixed">
+            <a href="#"><img class="logo" src="img/service/logo.png"/></a>
+            <ul class="navigation">
+                <li><a class="active" href="#">Главная</a></li>
+                <li><a href="#">О компании</a></li>
+                <li><a href="#">Доставка</a></li>
+                <li><a href="#">Как купить</a></li>
+                <li><a href="#">Бренды</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+            <a href="#" class="basket">Корзина</a>
+            <form class="search">
+                <input type="text" placeholder="Поиск по сайту...">
+            </form>
+        </div>
+    </div>
+    <div class="rotator">
+        <div class="slider">
+                <div class="container">
+                    <div id="slides">
+                        <div class="slide">
+                            <div class="text">
+                                <h1>DuraStyle</h1>
+                                <p>Биде Duravit DuraStyle с переливом</p>
+                                <a href="#">Подробнее</a>
+                            </div>
+                            <img src="img/slide_1.png" />
+                            <div class="empty"></div>
+                        </div>
+                        <img src="img/example-slide-2.jpg" alt="Photo by: Daniel Parks Link: http://www.flickr.com/photos/parksdh/5227623068/">
+                        <img src="img/example-slide-3.jpg" alt="Photo by: Mike Ranweiler Link: http://www.flickr.com/photos/27874907@N04/4833059991/">
+                        <img src="img/example-slide-4.jpg" alt="Photo by: Stuart SeegerLink: http://www.flickr.com/photos/stuseeger/97577796/">
+                        <a href="#" class="slidesjs-previous slidesjs-navigation"><i class="icon-chevron-left icon-large"></i></a>
+                        <a href="#" class="slidesjs-next slidesjs-navigation"><i class="icon-chevron-right icon-large"></i></a>
+                    </div>
+                </div>
+                <div class="contacts">
+                    <p class="first_p">(495)721 80 37</p>
+                    <p class="second_p">с 10:00 до 19:00, Пн-Пт</p>
+                    <a href="#">Не дозвонились?<br>Закажите звонок!</a>
+                </div>
+         </div>
+
+
+    </div>
+    <div class="main">
+        <div class="sidebar">
+            <ul class="sidebar_menu">
+                <li>
+                    <a href="#">Гидромассажные ванны</a>
+                </li>
+                <li>
+                    <a class="active" href="#">Душевые кабины с гидромассажем</a>
+                </li>
+                <li>
+                    <a href="#">Ванны с душевой кабиной</a>
+                </li>
+                <li>
+                    <a href="#">Душевые боксы</a>
+                </li>
+                <li>
+                    <a href="#">Минибассейны SPA</a>
+                </li>
+                <li>
+                    <a href="#">Сауны</a>
+                </li>
+                <li>
+                    <a href="#">Душевые углы</a>
+                </li>
+                <li>
+                    <a href="#">Душевые двери для душевых кабин</a>
+                </li>
+                <li>
+                    <a href="#">Шторки для ванны</a>
+                </li>
+                <li>
+                    <a href="#">Душевые панели</a>
+                </li>
+                <li>
+                    <a href="#">Душевые перегородки</a>
+                </li>
+                <li>
+                    <a href="#">Душевые поддоны</a>
+                </li>
+                <li>
+                    <a href="#">Мебель для ванной</a>
+                </li>
+                <li>
+                    <a href="#">Раковины</a>
+                </li>
+                <li>
+                    <a href="#">Унитазы</a>
+                </li>
+                <li>
+                    <a href="#">Биде</a>
+                </li>
+                <li>
+                    <a href="#">Крышки-биде</a>
+                </li>
+                <li>
+                    <a href="#">Писсуары</a>
+                </li>
+                <li>
+                    <a href="#">Инсталляции</a>
+                </li>
+                <li>
+                    <a href="#">Смывные бачки</a>
+                </li>
+                <li>
+                    <a href="#">Смесители</a>
+                </li>
+                <li>
+                    <a href="#">Душевая программа</a>
+                </li>
+                <li>
+                    <a href="#">Аксессуары для ванной комнаты</a>
+                </li>
+                <li>
+                    <a href="#">Полотенцесушители</a>
+                </li>
+                <li>
+                    <a href="#">Зеркала</a>
+                </li>
+            </ul>
+            <img class="wrapper-small" src="img/service/wrapper-small.png" />
+            <div class="stock">
+                <h3>% Акции</h3>
+                <div class="stock_block">
+                    <img src="img/stock_1.jpg" />
+                    <a href="#">
+                        <div class="stock_text">
+                            Подвесной унитаз Duravit D-Code
+                            (арт. 220909) с монтажной рамой Geberit по специальной цене!
+                            <img src="img/service/stock_arrow.png" />
+                        </div>
+                    </a>
+                </div>
+                <div class="stock_block">
+                    <img src="img/stock_2.jpg" />
+                    <a href="#">
+                        <div class="stock_text">
+                            Акция: подвесной унитаз (арт.5684) с сиденьем, монтажной рамой и кнопкой. В наличии!
+                            <img src="img/service/stock_arrow.png" />
+                        </div>
+                    </a>
+                </div>
+                <div class="stock_block">
+                    <img src="img/stock_3.jpg" />
+                    <a href="#">
+                        <div class="stock_text">
+                            Спецпредложение на душевую кабину с паровой баней Teuco L05
+                            <img src="img/service/stock_arrow.png" />
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <img class="wrapper-small" src="img/service/wrapper-small.png" />
+            <p>Подпишись на нашу рассылку, чтобы получать периодические обновления.</p>
+            <form>
+                <input type="text" placeholder="Введите Ваш email" class="email">
+                <input type="submit" value="Подписаться" class="submit">
+            </form>
+        </div>
+        <div class="content">
+            <img src="img/banner.jpg"/>
+            <img class="wrapper" src="img/service/wrapper.png"/>
+            <div class="brand">
+                <div class="brand_content">
+                    <form>
+                        <select>
+                            <option disabled selected>Бренд</option>
+                            <option>Gucci</option>
+                            <option>Rochas</option>
+                            <option>Lanvin</option>
+                            <option>Prada</option>
+                            <option>Marni</option>
+                        </select>
+                        <input class="search_brand" type="text">
+                        <input class="submit" type="submit" value="Искать">
+                    </form>
+                </div>
+            </div>
+            <ul class="submenu">
+                <li class="arrow">
+                    <a href="#">Интернет-магазин сантехники</a>
+                </li>
+                <li>
+                    <a class="active" href="#">Популярные товары</a>
+                </li>
+            </ul>
+            <div class="block">
+            <a class="zoom_icon" href="#"><img src="img/service/zoom_icon.png" /></a>
+            <img class="block_img" src="img/1.jpg" />
+            <div class="block_name">
+                Мебель для ванной Onsen Mini 01
+            </div>
+            <div class="block_price">
+                Цена от <span><b>29300</b> руб.</span>
+            </div>
+            <a href="#" class="basket_2"><img src="img/service/basket-gray.png" class="block_basket" /></a>
+        </div>
+            <div class="block">
+                <a class="zoom_icon" href="#"><img src="img/service/zoom_icon.png" /></a>
+                <img class="block_img" src="img/1.jpg" />
+                <div class="block_name">
+                    Мебель для ванной Onsen Mini 01
+                </div>
+                <div class="block_price">
+                    Цена от <span><b>29300</b> руб.</span>
+                </div>
+                <a href="#" class="basket_2"><img src="img/service/basket-gray.png" class="block_basket" /></a>
+            </div>
+            <div class="block">
+                <a class="zoom_icon" href="#"><img src="img/service/zoom_icon.png" /></a>
+                <img class="block_img" src="img/1.jpg" />
+                <div class="block_name">
+                    Мебель для ванной Onsen Mini 01
+                </div>
+                <div class="block_price">
+                    Цена от <span><b>29300</b> руб.</span>
+                </div>
+                <a href="#" class="basket_2"><img src="img/service/basket-gray.png" class="block_basket" /></a>
+            </div>
+            <div class="block">
+                <a class="zoom_icon" href="#"><img src="img/service/zoom_icon.png" /></a>
+                <img class="block_img" src="img/1.jpg" />
+                <div class="block_name">
+                    Мебель для ванной Onsen Mini 01
+                </div>
+                <div class="block_price">
+                    Цена от <span><b>29300</b> руб.</span>
+                </div>
+                <a href="#" class="basket_2"><img src="img/service/basket-gray.png" class="block_basket" /></a>
+            </div>
+            <div class="block">
+                <a class="zoom_icon" href="#"><img src="img/service/zoom_icon.png" /></a>
+                <img class="block_img" src="img/1.jpg" />
+                <div class="block_name">
+                    Мебель для ванной Onsen Mini 01
+                </div>
+                <div class="block_price">
+                    Цена от <span><b>29300</b> руб.</span>
+                </div>
+                <a href="#" class="basket_2"><img src="img/service/basket-gray.png" class="block_basket" /></a>
+            </div>
+            <div class="block">
+                <a class="zoom_icon" href="#"><img src="img/service/zoom_icon.png" /></a>
+                <img class="block_img" src="img/1.jpg" />
+                <div class="block_name">
+                    Мебель для ванной Onsen Mini 01
+                </div>
+                <div class="block_price">
+                    Цена от <span><b>29300</b> руб.</span>
+                </div>
+                <a href="#" class="basket_2"><img src="img/service/basket-gray.png" class="block_basket" /></a>
+            </div>
+            <div class="block">
+                <a class="zoom_icon" href="#"><img src="img/service/zoom_icon.png" /></a>
+                <img class="block_img" src="img/1.jpg" />
+                <div class="block_name">
+                    Мебель для ванной Onsen Mini 01
+                </div>
+                <div class="block_price">
+                    Цена от <span><b>29300</b> руб.</span>
+                </div>
+                <a href="#" class="basket_2"><img src="img/service/basket-gray.png" class="block_basket" /></a>
+            </div>
+            <div class="block">
+                <a class="zoom_icon" href="#"><img src="img/service/zoom_icon.png" /></a>
+                <img class="block_img" src="img/1.jpg" />
+                <div class="block_name">
+                    Мебель для ванной Onsen Mini 01
+                </div>
+                <div class="block_price">
+                    Цена от <span><b>29300</b> руб.</span>
+                </div>
+                <a href="#" class="basket_2"><img src="img/service/basket-gray.png" class="block_basket" /></a>
+            </div>
+            <div class="block">
+                <a class="zoom_icon" href="#"><img src="img/service/zoom_icon.png" /></a>
+                <img class="block_img" src="img/1.jpg" />
+                <div class="block_name">
+                    Мебель для ванной Onsen Mini 01
+                </div>
+                <div class="block_price">
+                    Цена от <span><b>29300</b> руб.</span>
+                </div>
+                <a href="#" class="basket_2"><img src="img/service/basket-gray.png" class="block_basket" /></a>
+            </div>
+            <div class="block">
+                <a class="zoom_icon" href="#"><img src="img/service/zoom_icon.png" /></a>
+                <img class="block_img" src="img/1.jpg" />
+                <div class="block_name">
+                    Мебель для ванной Onsen Mini 01
+                </div>
+                <div class="block_price">
+                    Цена от <span><b>29300</b> руб.</span>
+                </div>
+                <a href="#" class="basket_2"><img src="img/service/basket-gray.png" class="block_basket" /></a>
+            </div>
+            <div class="block">
+                <a class="zoom_icon" href="#"><img src="img/service/zoom_icon.png" /></a>
+                <img class="block_img" src="img/1.jpg" />
+                <div class="block_name">
+                    Мебель для ванной Onsen Mini 01
+                </div>
+                <div class="block_price">
+                    Цена от <span><b>29300</b> руб.</span>
+                </div>
+                <a href="#" class="basket_2"><img src="img/service/basket-gray.png" class="block_basket" /></a>
+            </div>
+            <div class="block">
+                <a class="zoom_icon" href="#"><img src="img/service/zoom_icon.png" /></a>
+                <img class="block_img" src="img/1.jpg" />
+                <div class="block_name">
+                    Мебель для ванной Onsen Mini 01
+                </div>
+                <div class="block_price">
+                    Цена от <span><b>29300</b> руб.</span>
+                </div>
+                <a href="#" class="basket_2"><img src="img/service/basket-gray.png" class="block_basket" /></a>
+            </div>
+            <div class="clear"></div>
+
+
+        </div>
+        <div class="clear"></div>
+        <div class="main_foot">
+            <div class="news">
+                <img class="wrapper bottom" src="img/service/wrapper.png"/>
+                <h3>Новости</h3>
+                <div class="news_block">
+                    <a href="#" class="first">Витязь — Северсталь. 3:1</a>
+                    <p>В матче регулярного чемпионата КХЛ "Витязь" в Чехове переиграл череповецкую "Северсталь" со счётом 3:1...</p>
+                    <a href="#" class="last">читать далее...</a>
+                </div>
+                <div class="news_block">
+                    <a href="#" class="first">Витязь — Северсталь. 3:1</a>
+                    <p>В матче регулярного чемпионата КХЛ "Витязь" в Чехове переиграл череповецкую "Северсталь" со счётом 3:1...</p>
+                    <a href="#" class="last">читать далее...</a>
+                </div>
+                <div class="news_block">
+                    <a href="#" class="first">Витязь — Северсталь. 3:1</a>
+                    <p>В матче регулярного чемпионата КХЛ "Витязь" в Чехове переиграл череповецкую "Северсталь" со счётом 3:1...</p>
+                    <a href="#" class="last">читать далее...</a>
+                </div>
+            </div>
+            <div class="clear"></div>
+            <div class="footer">
+                <p>Copyright &copy; 2013 LuxGarant</p>
+                <ul>
+                    <li>
+                        <a href="#">Главная</a>
+                    </li>
+                    <li>
+                        <a href="#">О компании</a>
+                    </li>
+                    <li>
+                        <a href="#">Контакты</a>
+                    </li>
+                    <li>
+                        <a href="#">Доставка</a>
+                    </li>
+                    <li>
+                        <a href="#">Как купить</a>
+                    </li>
+                    <li class="last">
+                        <a href="#">Бренды</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,967 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title></title>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700&subset=cyrillic,latin' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,500,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+	<link href="css/cssnew.css" rel="stylesheet" media="all">
+	<link href="css/odometer-theme-default.css" rel="stylesheet" media="all">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	<meta http-equiv="content-type" content="text/html; charset=windows-1251">
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/TweenMax.min.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/ScrollToPlugin.min.js"></script>
+		<script src="js/jquery.canvasjs.min.js"></script>
+		<script src="js/ScrollMagic.js"></script>
+		<script src="js/animation.gsap.js"></script>
+	    <script src="js/debug.addIndicators.js"></script><!-- Dev only -->
+		<script src="js/odometer.min.js"></script>
+		<script src="js/jsnew.js"></script>
+</head>
+<body>
+	<div class="one-wrapper">
+		<div class="video">
+			<video class="reel" preload="auto" autoplay="" loop="">
+	            <source src="video/bg.mp4" type="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;">
+	            <source src="video/bg.ogv" type="video/ogg; codecs=&quot;theora, vorbis&quot;">
+	            <source src="video/bg.webm" type="video/webm; codecs=&quot;vp8, vorbis&quot;">
+	        </video>
+		</div>
+		<div class="desc">ПостНаука в цифрах</div>
+		<div class="big-number">3</div>
+		<div class="numbers-wrapper">
+			<span class="equality"> =</span> <span id="odometer1" class="odometer"></span> дней
+		</div>
+		<a class="mouse" href="#eleven-timeline"><img src="img/mouse.png"/></a>
+	</div>
+	<div id="eleven-timeline" class="eleven-timeline-wrapper">
+		<div class="timeline">
+			<div id="animation-one" class="left animate">
+				<div class="block first">
+					<div class="text">
+						ЗАРЕГИСТРИРОВАНО<br>ДОМЕННОЕ ИМЯ<br>
+						<a href="#">postnauka.ru</a>
+					</div>
+					<img src="img/left-block-one.png">
+					<div class="date">23<br>сен</div>
+					<div class="clear"></div>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div id="animation-two" class="right last animate">
+				<div class="block">
+					<div class="text">
+						СОЗДАН YOUTUBE<br>КАНАЛ ПОСТНАУКИ<br>
+						<a href="#">youtube.com/user/postnauka</a>
+					</div>
+					<img src="img/right-block-one.png">
+					<div class="date">1<br>дек</div>
+					<div class="clear"></div>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+		
+		<div id="scene-one" class="main-year">2011</div>
+	</div>
+	<div class="youtube-wrapper">
+		<div class="youtube">
+			<img src="img/youtube-arrow.png" alt="" class="arrow"/>
+			<div class="view-one">
+				<span class="desc">Просмотров на Youtube</span>
+				<span id="odometer2" class="odometer"></span>
+			</div>
+			<div class="view-two">
+				<span class="desc">Просмотров в минутах</span>
+				<span id="odometer3" class="odometer"></span><span class="min"> минут</span>
+			</div>
+			<div class="view-three">
+				<span class="desc">...или</span>
+				<span id="odometer4" class="odometer"></span><span class="year"> лет</span>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+
+	<div class="twelve-timeline-wrapper">
+		<div class="timeline">
+			<div id="animation-three" class="left animate">
+				<div class="block first">
+					<div class="text-wrapper">
+						<img src="img/twelve-first-left.png" alt="" class="first">
+						<img src="img/twelve-second-left.png" alt="" class="second">
+						<img src="img/twelve-arrow-left.png" alt="" class="arrow">
+
+						ПостНаука въезжает <br>в редакцию на Арбате
+					</div>
+					<div class="date">15<br>янв</div>
+					<div class="clear"></div>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div id="animation-four" class="right animate">
+				<div class="block">
+					<div class="text-wrapper">
+						<img src="img/twelve-first-right.png" alt="" class="first">
+						<img src="img/twelve-arrow-right.png" alt="" class="arrow">
+						Сайт официально открывается для посетителей. Главный редактор Ивар Максутов сообщает об этом в facebook'e
+					</div>
+					<div class="date">24<br>мая</div>
+					<div class="clear"></div>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div id="animation-five" class="left animate">
+				<div class="block">
+					<div class="video-wrapper">
+						<img src="img/twelve-arrow-left.png" alt="" class="arrow">
+						 Первая записанная лекция
+						<div class="video">
+							<iframe width="453" height="255" src="https://www.youtube.com/embed/-wCwLWYPoP8" frameborder="0" allowfullscreen></iframe>
+						</div>
+						<div class="full-video">
+							<div class="left-text">
+								<span id="odometer5" class="odometer"></span><br>
+								всего записано лекций
+							</div>
+							<div class="right-text">
+								Публикация лекции Виктора Вахштайна —<br>первого ученого, записанного для ПостНауки
+							</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+					<div class="date video-date">1<br>июн</div>
+					<div class="clear"></div>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div id="animation-six" class="right animate">
+				<div class="block">
+					<div class="text-wrapper-two">
+						<img src="img/twelve-second-right.png" alt="" class="first">
+						<img src="img/twelve-arrow-right.png" alt="" class="arrow">
+						Выходит первая вкладка ПостНауки 
+
+
+						
+					</div>
+					<div class="date">31<br>авг</div>
+					<div class="clear"></div>
+					<div class="app">
+							<div class="left-text">
+								<span id="odometer6" class="odometer"></span><br>
+								выпусков
+							</div>
+							<div class="right-text">
+								Раз в две недели по пятницам в «Новой газете» публикуется специальное приложение с избранными материалами ПостНауки
+							</div>
+							<div class="clear"></div>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div id="animation-seven" class="left animate">
+				<div class="block first">
+					<div class="simple-text">
+						ИД «ПостНаука»  зарегистрирована в Едином<br> Государственном Реестре Юридических Лиц
+					</div>
+					<div class="date">8<br>ноя</div>
+					<div class="clear"></div>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div id="animation-eight" class="left animate">
+				<div class="block first">
+					<div class="text">
+						Выходит первый выпуск <br>TV формата «Перспективы»<br>
+						<a href="#">Посмотреть проект</a>
+					</div>
+					<img src="img/left-block-two.png">
+					<div class="date">15<br>ноя</div>
+					<div class="clear"></div>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div id="animation-nine" class="right last animate">
+				<div class="block">
+					<div class="text">
+						<img src="img/right-block-two.gif">
+						Выходит первый спецпроект. <br>Партнером выступила ОАО РВК
+
+						<div class="small-txt">
+							На протяжение всех трех лет Российская Венчурная Компания будет поддерживать ПостНауку в различных проектах, от освещения последних инновационных исследований <br>до проведения образовательных лекций для журналистов
+						</div>
+					</div>
+					<div class="date">10<br>дек</div>
+					<div class="clear"></div>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+		
+		<div id="scene-two" class="main-year">2012</div>
+		<img class="mouse" src="img/mouse.png"/>
+	</div>
+
+	<div class="statistic-one-wrapper">
+		<div class="statistic-one">
+			<div class="donuts-wrapper">
+				
+				<div class="second-pie-wrapper">
+					<div class="text">
+						Оставлено<br>комментариев
+					</div>
+					<div class="donut">
+						<div class="wrapper" id="second-pie"></div>
+						<div class="main-number">
+							24997
+						</div>
+						<span class="one">12 571 на youtube</span>
+						<span class="two">12 426 на сайте</span>
+					</div>
+					
+				</div>
+
+				<div class="first-pie-wrapper">
+					<div class="text">
+						Всего материалов<br>на сайте
+					</div>
+					<div class="donut">
+						<div class="wrapper" id="first-pie"></div>
+						<div class="main-number">
+							2690
+						</div>
+						<span class="two">148<br>рекомендаций<br>книг</span>
+						<span class="four">177 <br>интервью</span>
+						<span class="five">538 faq</span>
+						<span class="six">27 курсов</span>
+						<span class="seven">227 статей</span>
+						<span class="eight">1530<br> лекций</span>
+					</div>
+					
+				</div>
+				<div class="third-pie-wrapper">
+					<div class="text">
+						Подписчики<br>в соцсетях
+					</div>
+					<div class="donut">
+						<div class="wrapper" id="third-pie"></div>
+						<div class="main-number">
+							233 859
+						</div>
+						<span class="one">Вконтакте<br>176632 </span>
+						<span class="two">Фейсбук<br>48156</span>
+						<span class="three">Твиттер<br>9071 </span>
+					</div>
+					
+				</div>
+				<div class="clear"></div>
+			</div>
+			<h3>Материалы по разделам<br>на сайте</h3>
+			<span class="name one">Астрономия<br><br><br><span class="number">155</span></span>
+			<span class="name two">Биология<br><br><br><br><span class="number">502</span></span>
+			<span class="name three">История<br><br><br><br><span class="number">422</span></span>
+			<span class="name four">Культура<br><br><br><span class="number">343</span></span>
+			<span class="name five">Математика<br><br><span class="number">120</span></span>
+			<span class="name six">Медицина<br><br><br><span class="number">190</span></span>
+			<span class="name seven">Право<br><br><span class="number">71</span></span>
+			<span class="name eight">Психология<br><br><span class="number">105</span></span>
+			<span class="name nine">Социология<br><br><br><span class="number">218</span></span>
+			<span class="name ten">Технологии<br><br><span class="number">209</span></span>
+			<span class="name eleven">Физика<br><br><br><span class="number">306</span></span>
+			<span class="name twelve">Философия<br><br><span class="number">190</span></span>
+			<span class="name thirteen">Химия<br><br><span class="number">105</span></span>
+			<span class="name fourteen">Экономика<br><br><br><span class="number">171</span></span>
+			<span class="name fifteen">Язык<br><br><br><span class="number">200</span></span>
+		</div>
+	</div>
+
+
+	<div class="thirteen-timeline-wrapper">
+		<div class="timeline">
+			<div id="animation-ten" class="right animate">
+				<div class="block first">
+					<div class="text">
+						<img src="img/right-block-three.gif">
+						постнаука запускает собственную<br>передачу на радио рсн<br>
+						<span class="small-txt">
+							Позднее в дополнение к ней откроется<br> еще две передачи, создаваемые<br> редакцией проекта 
+						</span>
+					</div>
+					<div class="date">15<br>фев</div>
+					<div class="clear"></div>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div id="animation-eleven" class="left animate">
+				<div class="block">
+					<div class="text-wrapper">
+						<img src="img/twelve-three-left.png" alt="" class="first">
+						<img src="img/twelve-four-left.png" alt="" class="second">
+						<img src="img/twelve-arrow-left.png" alt="" class="arrow">
+
+						Сотрудничество с газетой<br> «Московские новости» 
+					</div>
+					<div class="date">7<br>мар</div>
+					<div class="clear"></div>
+					<div class="full-video">
+							<div class="left-text">
+								<br><br>наши ученые<br>порекомендовали
+								<span id="odometer7" class="odometer"></span><br>
+								Научных книг
+							</div>
+							<div class="right-text">
+								Каждый четверг в газете «Московские новости» публикуется подборка из 5 книг, которые рекомендуют ученые ПостНауки по темам своих исследований.
+							</div>
+							<div class="clear"></div>
+						</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div id="animation-twelve" class="right animate">
+				<div class="block">
+					<div class="text-wrapper">
+						<img src="img/thirteen-second-right.png" alt="" class="first">
+						<img src="img/twelve-arrow-right.png" alt="" class="arrow">
+						ПостНаука и Фонд Дмитрия <br>Зимина «Династия» вместе <br>запускают серию публичных <br>лекций «Диалоги»
+
+						
+					</div>
+					<div class="date">21<br>апр</div>
+					<div class="clear"></div>
+					<div class="app">
+							<div class="left-text">
+								<span id="odometer8" class="odometer"></span><br>
+								лекций<br>проведено
+							</div>
+							<div class="right-text">
+								Каждые две недели к КЦ "ЗИЛ" ПостНаука проводит лекции, в рамках которых два эксперта освещают различные аспекты одной темы, дискутируя и дополняя друг друга.
+							</div>
+							<div class="clear"></div>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+
+			<div id="animation-thirteen" class="left animate">
+				<div class="block">
+					<div class="text-wrapper-three">
+						<img src="img/thirteen-six-left.png" alt="" class="first">
+						<img src="img/thirteen-five-left.png" alt="" class="second">
+						<img src="img/twelve-arrow-left.png" alt="" class="arrow">
+
+						Каждую неделю ученые<br>  отвечают на вопросы для<br> аудитории Look At Me
+
+					</div>
+					<div class="date">18<br>июл</div>
+					<div class="clear"></div>
+					<div class="full-video-two">
+							<div class="left-text">
+								<br><br>
+								<span id="odometer9" class="odometer"></span>
+								
+							</div>
+							<div class="r">
+								ответа<br>на сложные<br>вопросы
+							</div>
+							<div class="clear"></div>
+							<div class="right-text">
+								Интересные, иногда немного наивные, но совершенно непростые вопросы получили ответы с помощью ученых ПостНауки
+							</div>
+							
+
+						</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+
+			<div id="animation-fourteen" class="right animate">
+				<div class="block">
+					<div class="big-img">
+						ПостНаука выпускает первый курс <br>«Антропогенез»<br><br>
+						<img src="img/twelve-arrow-right.png" alt="" class="arrow">
+						<img src="img/thirteen-new-right.png" alt="">
+						<span class="small-txt">
+							В дальнейшем количество курсов увеличивается,<br> они выходят каждую среду
+						</span>
+					</div>
+					<div class="date">13<br>сен</div>
+					<div class="clear"></div>
+					
+				</div>
+				<div class="clear"></div>
+			</div>
+
+			<div id="animation-fifteen" class="left animate">
+				<div class="block">
+					<div class="text">
+						Новая передача «SCIENCEHUB»<br>
+						<span class="small-txt">
+							Видео-репортажи из лабораторий ученых,<br> которые рассказывают о перспективных <br>исследовательских направлениях
+
+						</span>
+						<a href="#">Посмотреть проект</a>
+					</div>
+					<div class="date">19<br>окт</div>
+					<div class="clear"></div>
+				</div>
+				<div class="clear"></div>
+			</div>
+
+			<div id="animation-sixteen" class="left animate">
+				<div class="block">
+					<div class="text-wrapper-three">
+						<img src="img/thirteen-seven-left.png" alt="" class="first">
+						<img src="img/thirteen-eight-left.png" alt="" class="second">
+						<img src="img/twelve-arrow-left.png" alt="" class="arrow">
+
+						Запуск совместного проекта<br>со Сколковским институтом <br>
+						науки и технологий
+
+					</div>
+					<div class="date">28<br>окт</div>
+					<div class="clear"></div>
+					<div class="full-video">
+							<div class="left-text">
+								<br><br>
+								<span id="odometer10" class="odometer"></span><br>
+								опубликованных<br>материалов
+							</div>
+							<div class="right-text">
+								Ученые из ведущих университетов мира рассказывают о последних инновационных разработках.
+							</div>
+							<div class="clear"></div>
+						</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+
+			<div id="animation-seventeen" class="right animate">
+				<div class="block">
+					<div class="text-wrapper-three">
+						<img src="img/thirteen-three-right.png" alt="" class="first">
+						<img src="img/thirteen-four-right.png" alt="" class="second">
+						<img src="img/twelve-arrow-right.png" alt="" class="arrow">
+						Выход в глобальный <br>интернет и запуск<br> англоязычного проекта<br> Serious Science
+
+
+
+						
+					</div>
+					<div class="date">9<br>дек</div>
+					<div class="clear"></div>
+					<div class="app2">
+							<div class="left-text">
+								<span id="odometer11" class="odometer"></span><br>
+								публикуемых<br>авторов
+							</div>
+							<div class="right-text">
+								<span id="odometer12" class="odometer"></span><br>
+								нобелевских<br>лауреата
+							</div>
+							<div class="clear"></div>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+
+
+			<div id="animation-eighteen" class="left last animate">
+				<div class="block">
+					<div class="text">
+						Пресс-лекции на актуальные темы <br>в редакциях ведущих СМИ при поддержке РВК<br>
+						<a href="#">Посмотреть проект</a>
+					</div>
+					<div class="date">17<br>дек</div>
+					<div class="clear"></div>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+
+		
+		
+		<div id="scene-three" class="main-year">2013</div>
+		<img class="mouse" src="img/mouse.png"/>
+	</div>
+
+	<div class="video-slider-wrapper">
+		<div class="video-slider">
+			<h3><span>Топ-10 видео 2014 года</span><br>по времени просмотра на youtube</h3>
+
+			<div class="video-block-wrapper">
+				<div data="1" class="video-block">
+					<iframe width="640" height="360" src="https://www.youtube.com/embed/XYHD3JvtanY" frameborder="0" allowfullscreen></iframe>
+				</div>
+				<div data="2" class="video-block">
+					<iframe width="640" height="360" src="https://www.youtube.com/embed/XYHD3JvtanY" frameborder="0" allowfullscreen></iframe>
+				</div>
+				<div data="3" class="video-block">
+					<iframe width="640" height="360" src="https://www.youtube.com/embed/XYHD3JvtanY" frameborder="0" allowfullscreen></iframe>
+				</div>
+				<div data="4" class="video-block">
+					<iframe width="640" height="360" src="https://www.youtube.com/embed/XYHD3JvtanY" frameborder="0" allowfullscreen></iframe>
+				</div>
+				<div data="5" class="video-block">
+					<iframe width="640" height="360" src="https://www.youtube.com/embed/XYHD3JvtanY" frameborder="0" allowfullscreen></iframe>
+				</div>
+				<div data="6" class="video-block">
+					<iframe width="640" height="360" src="https://www.youtube.com/embed/XYHD3JvtanY" frameborder="0" allowfullscreen></iframe>
+				</div>
+				<div data="7" class="video-block">
+					<iframe width="640" height="360" src="https://www.youtube.com/embed/XYHD3JvtanY" frameborder="0" allowfullscreen></iframe>
+				</div>
+				<div data="8" class="video-block">
+					<iframe width="640" height="360" src="https://www.youtube.com/embed/XYHD3JvtanY" frameborder="0" allowfullscreen></iframe>
+				</div>
+				<div data="9" class="video-block">
+					<iframe width="640" height="360" src="https://www.youtube.com/embed/XYHD3JvtanY" frameborder="0" allowfullscreen></iframe>
+				</div>
+				<div data="10" class="video-block">
+					<iframe width="640" height="360" src="https://www.youtube.com/embed/XYHD3JvtanY" frameborder="0" allowfullscreen></iframe>
+				</div>
+
+				<img src="img/video-slider-arrow-left.png" alt="" class="left-arrow">
+				<img src="img/video-slider-arrow-right.png" alt="" class="right-arrow">
+			</div>
+
+			<ul class="paginator">
+				<li data="1">1</li>
+				<li data="2">2</li>
+				<li data="3">3</li>
+				<li data="4">4</li>
+				<li data="5">5</li>
+				<li data="6">6</li>
+				<li data="7">7</li>
+				<li data="8">8</li>
+				<li data="9">9</li>
+				<li data="10">10</li>
+			</ul>
+				
+		</div>
+		<div class="current-number">
+			1
+		</div>
+	</div>
+
+	<div class="statistic-two-wrapper">
+		<div class="statistic-two">
+			<div class="donuts-wrapper">
+				<div class="second-pie-wrapper">
+					<div class="text">
+						Гендер<br>ученых
+					</div>
+					<div class="donut">
+						<div class="wrapper" id="five-pie"></div>
+						
+						<span class="one">Женщины 25%</span>
+						<span class="two">Мужчины 75%</span>
+					</div>
+					
+				</div>
+				<div class="first-pie-wrapper">
+					<div class="text">
+						Звания<br>ученых
+					</div>
+					<div class="donut">
+						<div class="wrapper" id="four-pie"></div>
+						<span class="three">Кандидаты 31% </span>
+						<span class="five">PhD 25%</span>
+						<span class="six">Доктора 44%</span>
+					</div>
+					
+				</div>
+
+				<div class="third-pie-wrapper">
+					<div class="text">
+						Читатели<br>ПостНауки
+					</div>
+					<div class="counter-one">
+						<span class="name">Уникальных посетителей</span><br>
+						<span id="odometer13" class="odometer"></span>
+					</div>
+					<div class="counter-two">
+						<span class="name">Просмотров страниц</span><br>
+						<span id="odometer14" class="odometer"></span>
+					</div>
+				</div>
+				
+				<div class="clear"></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="fourteen-timeline-wrapper">
+		<div class="timeline">
+			<div id="animation-nineteen" class="left animate">
+				<div class="block first">
+					<div class="text-wrapper-three">
+						<img src="img/fourteen-left-one.png" alt="" class="first">
+						<img src="img/fourteen-left-two.png" alt="" class="second">
+						<img src="img/twelve-arrow-left.png" alt="" class="arrow">
+
+						Переходим на новую волну<br> ПостНаука запускает<br> 4 передачи на радио 
+
+
+
+					</div>
+					<div class="date">1<br>мар</div>
+					<div class="clear"></div>
+					<div class="full-video">
+							<div class="left-text">
+								<br><br>
+								<span id="odometer15" class="odometer"></span><br>
+								года<br>в эфире
+							</div>
+							<div class="right-text">
+								На радиостанции «Говорит Москва» выходят передачи «ПостНаука», «Русский язык», «История религии» и «Точки над i»
+							</div>
+							<div class="clear"></div>
+						</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div id="animation-twenty" class="right animate">
+				<div class="block">
+					<div class="text">
+						<img src="img/fourteen-right-one.gif">
+						сотрудничество<br>с Университетом Иннополис<br>
+						<span class="small">
+							ПостНаука расширяет количество университетов,<br> которым помогает в продвижении их<br> профессоров, учебных программ и научной<br> активности 
+						</span>
+					</div>
+					<div class="date">7<br>мар</div>
+					<div class="clear"></div>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div id="animation-twenty-one" class="left animate">
+				<div class="block">
+					
+					<div class="text">
+					<img class="first" src="img/fourteen-left-three.gif" alt="">
+					<div class="clear"></div>
+						Проект ПостНауки и Московской <br>высшей школы социальных <br>и экономических наук <br>
+						<span class="small">Вслед за Сколтехом и Иннополисом ПостНаука рассказывает о магистерских программах одной из лучших социологических школ современной России</span>
+						<a href="#">Зачем нужны социальные науки?</a>
+					</div>
+					<div class="date">10<br>июл</div>
+					<div class="clear"></div>
+				</div>
+				<div class="clear"></div>
+			</div>
+
+			<div id="animation-twenty-two" class="right animate">
+				<div class="block">
+					<div class="text-wrapper">
+						<img src="img/fourteen-right-two.png" alt="" class="first">
+						<img src="img/twelve-arrow-right.png" alt="" class="arrow">
+						<img src="img/fourteen-right-three.png" alt="" >
+						Еженедельные публикации<br> материалов на сайте Forbes
+
+
+						
+					</div>
+					<div class="date">12<br>сен</div>
+					<div class="clear"></div>
+					<div class="app">
+							<div class="left-text">
+								<span id="odometer16" class="odometer"></span><br>
+								
+							</div>
+							<div class="right-text">
+								статьи<br>написано
+							</div>
+							<div class="clear"></div>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+
+			<div id="animation-twenty-three" class="left animate">
+				<div class="block">
+					
+					<div class="text">
+					<img class="first" src="img/fourteen-left-four.gif" alt="">
+					<div class="clear"></div>
+						Сотрудничество с РосНано<br>
+						<span class="small">О главных достижениях в области применения нанотехнологий от медицины до физики</span>
+						<a href="#">Как нанообъекты меняют <br>мир технологий?</a>
+					</div>
+					<div class="date">4<br>ноя</div>
+					<div class="clear"></div>
+				</div>
+				<div class="clear"></div>
+			</div>
+
+			<div id="animation-twenty-four" class="right last animate">
+				<div class="block">
+					<div class="text">
+						<img src="img/fourteen-right-four.gif">
+						Serious Science<br>
+						<span class="small">
+							Лауреат международного конкурса<br>интернет-предпринимательства
+						</span><br>
+						CER Internet Entrepreneurs <br>Prize 2014 
+					</div>
+					<div class="date">23<br>дек</div>
+					<div class="clear"></div>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+
+		<div id="scene-four" class="main-year">2014</div>
+		<img class="mouse" src="img/mouse.png"/>
+	</div>
+
+	<div class="statistic-three-wrapper">
+		<div class="statistic-three">
+			<h3>Топ-5 самых активных авторов</h3>
+			<div class="author-block" style="border-left:1px solid #363636;">
+				<img src="img/author-1.png" alt="">
+				<div class="name">
+					виктор<br>вахштайн
+				</div>
+				<div class="number">
+					59 материалов
+				</div>
+			</div>
+			<div class="author-block">
+				<img src="img/author-2.png" alt="">
+				<div class="name">
+					сергей<br>попов
+				</div>
+				<div class="number">
+					39 материалов
+				</div>
+			</div>
+			<div class="author-block">
+				<img src="img/author-3.png" alt="">
+				<div class="name">
+					станислав <br>дробышевский
+				</div>
+				<div class="number">
+					38 материалов
+				</div>
+			</div>
+			<div class="author-block">
+				<img src="img/author-4.png" alt="">
+				<div class="name">
+					Гасан<br>Гусейнов
+				</div>
+				<div class="number">
+					38 материалов
+				</div>
+			</div>
+			<div class="author-block">
+				<img src="img/author-5.png" alt="">
+				<div class="name">
+					Александр<br>Марей
+				</div>
+				<div class="number">
+					29 материалов
+				</div>
+			</div>
+			<div class="clear"></div>
+			<div class="donuts-wrapper">
+				<div class="first-pie-wrapper">
+					<div class="text">
+						География<br>читателей
+					</div>
+					<div class="donut">
+						<div class="wrapper" id="six-pie"></div>
+						
+					</div>
+					
+				</div>
+				<div class="second-pie-wrapper">
+					<div class="text">
+						Гендер<br>читателей
+					</div>
+					<div class="donut">
+						<div class="wrapper" id="seven-pie"></div>
+						
+					</div>
+					
+				</div>
+				<div class="third-pie-wrapper">
+					<div class="text">
+						Возраст<br>читателей
+					</div>
+					<div class="donut">
+						<div class="wrapper" id="eight-pie"></div>
+						
+					</div>
+					
+				</div>
+				<div class="clear"></div>
+			</div>
+			<table class="first">
+				<tr>
+					<td class="percent">73%</td>
+					<td class="percent">3%</td>
+					<td class="percent">2%</td>
+				</tr>
+				<tr>
+					<td class="desc">Россия</td>
+					<td class="desc">Беларусь</td>
+					<td class="desc">США</td>
+				</tr>
+				<tr>
+					<td class="percent">10%</td>
+					<td class="percent">2%</td>
+					<td class="percent"></td>
+				</tr>
+				<tr>
+					<td class="desc">Украина</td>
+					<td class="desc">Казахстан</td>
+					<td></td>
+				</tr>
+			</table>
+
+			<table class="second">
+				<tr>
+					<td class="percent">57%</td>
+				</tr>
+				<tr>
+					<td class="desc">Мужчины</td>
+				</tr>
+				<tr>
+					<td class="percent">43%</td>
+				</tr>
+				<tr>
+					<td class="desc">Женщины</td>
+					<td></td>
+				</tr>
+			</table>
+
+
+			<table class="third">
+				<tr>
+					<td class="percent">18%</td>
+					<td class="percent">20%</td>
+					<td class="percent">7%</td>
+				</tr>
+				<tr>
+					<td class="desc">18-24</td>
+					<td class="desc">35-44</td>
+					<td class="desc">55-64</td>
+				</tr>
+				<tr>
+					<td class="percent">33%</td>
+					<td class="percent">16%</td>
+					<td class="percent">6%</td>
+				</tr>
+				<tr>
+					<td class="desc">25-34</td>
+					<td class="desc">45-54</td>
+					<td class="desc">65+</td>
+				</tr>
+			</table>
+			<div class="clear"></div>
+		</div>
+	</div>
+
+	<div class="fifteen-timeline-wrapper">
+		<div class="timeline">
+			<div id="animation-twenty-five" class="left animate">
+				<div class="block first">
+					<div class="text-wrapper-three">
+						<img src="img/fifteen-left-one.png" alt="" class="first">
+						<img src="img/fifteen-left-two.png" alt="" class="second">
+						<img src="img/twelve-arrow-left.png" alt="" class="arrow">
+
+						ПостНаука получает премию<br> «За верность науке» 
+					</div>
+					<div class="date">10<br>фев</div>
+					<div class="clear"></div>
+					<div class="full-video">
+							<div class="left-text">
+								В номинации «Лучший интернет-проект о науке»,<br> которую впервые вручает Министерство<br> образования и науки. 
+							</div>
+						</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+
+			<div id="animation-twenty-six" class="right animate">
+				<div class="block">
+					<div class="text">
+						<img src="img/fifteen-right-one.gif">
+						ПостНаука завершает работу <br>над научной концепцией экспозиции <br>Политехнического музея <br>
+						<span class="small">
+							ИД ПостНаука привлекла к работе свыше 200<br> ученых. В итоге было сформулировано и описано<br> 159 научных идей, которые в будущем станут<br> экспонатами
+						</span>
+					</div>
+					<div class="date">7<br>мар</div>
+					<div class="clear"></div>
+				</div>
+				<div class="clear"></div>
+			</div>
+
+			<div id="animation-twenty-seven" class="left animate">
+				<div class="block">
+					
+					<div class="text">
+					<img class="first" src="img/fifteen-left-three.gif" alt="">
+					<div class="clear"></div>
+						ПостНаука публикует первый <br>анимационный фильм при поддержке МГТС <br>
+						<img class="second" src="img/fifteen-left-four.png" alt="">
+					</div>
+					<div class="date">19<br>мар</div>
+					<div class="clear"></div>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+
+		<div id="scene-five" class="main-year">2015</div>
+	</div>
+
+	<div class="last-wrapper">
+		<div class="last">
+			<div class="block">
+				<div class="last-date">24<br>мая</div>
+				<img src="img/last-arrow.png" alt="" class="arrow">
+				<h3>постнауке исполняется</h3>
+				<h1>3 года</h1>
+				<img style="margin:0 auto;" src="img/sample.png" alt="">
+
+				<div class="mail">
+					<div class="text">
+						Будьте в курсе наших новостей и мероприятий:
+					</div>
+					<form action="">
+						<input class="email" type="text"><input class="submit" type="submit" value="Подписаться">
+						<div class="clear"></div>
+					</form>
+				</div>
+			</div>
+			<div class="txt"> Поделитесь нашей историей:</div>
+			<div class="social">
+				<a class="facebook" href="#"></a>
+				<a class="vk" href="#"></a>
+				<a class="twitter" href="#"></a>
+				<div class="clear"></div>
+			</div>
+			<a class="help" href="#">Помочь проекту</a>
+		</div>
+	</div>
+	<div class="footer-wrapper">
+		<div class="footer">
+			<a href="#" class="logo"></a>
+			<ul>
+				<li><a href="#">о спецпроектЕ</a></li>
+				<li><a href="#">партнерам</a></li>
+				<li><a href="#">реклама</a></li>
+			</ul>
+			<div class="text">
+				© ПостНаука, 2012-2015. Использование материалов сайта postnauka.ru<br> разрешено только при наличии активной ссылки на источник. <br>Все права на картинки и тексты принадлежат их авторам.
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+	
+</body>
+</html>

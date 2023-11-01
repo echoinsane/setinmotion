@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TO-DO-LIST</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+    <link rel="stylesheet" type="text/css" href="css/to-do-list.css">
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,700&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/to-do.js"></script>
+    <script type="text/javascript">
+        function FocusOnInput()
+        {
+            document.getElementById("addInput").focus();
+        }
+    </script>
+</head>
+<body onload="FocusOnInput()">
+    <div class="central">
+        <h1>TO DO LIST</h1>
+        <div class="storage">
+
+        </div>
+
+
+        <input id="addInput" type="text" name="addingElement" placeholder="Введите название задачи"/>
+        <div class="button"><img title="Add" src="img/plus_2.png" /></div>
+        <div class="clear"></div>
+    </div>
+</body>
+</html>

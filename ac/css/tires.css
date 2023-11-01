@@ -1,0 +1,393 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	margin:0;
+}
+
+a {
+	text-decoration:none;
+	color:#000000;
+}
+a:hover {
+	color:#0877ac;
+}
+
+ul {
+	list-style: none;
+	padding:0;
+	margin:0;
+}
+
+.main {
+	width:992px;
+	margin:0 auto;
+	margin-top:1px;
+	padding: 0px 15px 20px;
+}
+.header {
+	height:114px;
+	position:relative;
+	margin: 0 1px -3px 1px;
+	background-image: url(../images/content_shadow.png);
+	background-repeat: repeat-x;
+	background-position: left bottom;
+}
+#vwd4_logo {
+	position:absolute;
+	top:22px;
+	left:0;
+}
+.vwd4_m500 {
+	position: absolute;
+	top: 67px;
+	left: 80px;
+	color:#33434c;
+	
+}
+.vwd4_m500 li{
+	
+}
+.vwd4_m500 li:hover {
+	background:#ffffff;
+
+	
+	}
+.vwd4_m500 a:hover	{
+	padding-bottom:10px;
+}
+	
+
+
+.content {
+	border: 1px solid #cfd7d9;
+	border-top: 0;
+
+}
+.navigation2 {
+	height:46px;
+	font-size:14px;
+	padding: 5px 0;
+	margin: 0 20px;
+	border-bottom:1px solid #cccccc;
+}
+.navigation2 ul {
+	margin-top: 4px;
+	display: block;
+}
+.navigation2 ul li {
+	float: left;
+	display: inline;
+	padding-left: 10px;
+	margin-left: 9px;
+	background-image: url(../images/arrows_sprite.png);
+	background-repeat: no-repeat;
+	background-position: -359px -140px;
+}
+.navigation2 ul li a {
+	display: block;
+	background-repeat: no-repeat;
+}
+#nav2_link1 {
+	width: 105px;
+	height: 16px;
+	background-position: 0 0px;
+	background-image: url(../images/504_sprite.png);
+}
+#nav2_link1:hover {
+	background-position: 0 -26px;
+}
+#nav2_link2 {
+	width: 125px;
+	height: 16px;
+	background-position: 0 -88px;
+	background-image: url(../images/504_sprite.png);
+}
+#nav2_link2:hover {
+	background-position: 0 -114px;
+}
+#nav2_link3 {
+	width: 150px;
+	height: 16px;
+	background-position: 0 -176px;
+	background-image: url(../images/504_sprite.png);
+}
+
+#nav2_link3:hover {
+	background-position: 0 -202px;
+}
+#nav2_link4 {
+	width: 96px;
+	height: 16px;
+	background-position: 0 -264px;
+	background-image: url(../images/504_sprite.png);
+}
+
+#nav2_link4:hover {
+	background-position: 0 -290px;
+}
+#nav2_link5 {
+	width: 203px;
+	height: 16px;
+	background-position: 0 -352px;
+	background-image: url(../images/504_sprite.png);
+}
+
+#nav2_link5:hover {
+	background-position: 0 -378px;
+}
+#nav2_link6 {
+	width: 229px;
+	height: 16px;
+	background-position: 0 -440px;
+	background-image: url(../images/504_sprite.png);
+}
+
+#nav2_link6:hover {
+	background-position: 0 -466px;
+}
+#nav2_link7 {
+	width: 161px;
+	height: 16px;
+	background-position: 0 -528px;
+	background-image: url(../images/504_sprite.png);
+}
+
+#nav2_link7:hover {
+	background-position: 0 -554px;
+}
+#nav2_link8 {
+	width: 125px;
+	height: 16px;
+	background-position: 0 -616px;
+	background-image: url(../images/504_sprite.png);
+}
+
+#nav2_link8:hover {
+	background-position: 0 -642px;
+}
+#nav2_link9 {
+	width: 131px;
+	height: 16px;
+	background-position: 0 -704px;
+	background-image: url(../images/504_sprite.png);
+}
+
+#nav2_link9:hover {
+	background-position: 0 -730px;
+}
+.nav_link_service {
+	display:block;
+	width: 48px;
+	height: 18px;
+	background-position: 0px 0px;
+	background-image: url(../images/section_label_image.png);
+	float: left;
+	margin: 3px 10px 0 0;
+	background-repeat: no-repeat;
+}
+
+.main_block {
+	margin-left:20px;
+	margin-top:20px;
+	
+	width:215px;
+	height:169px;
+	float:left;
+}
+.img_block {
+	height:102px;
+	
+}
+.text_block {
+	font-family:Arial;
+	font-weight:bold;
+	font-size:11px;
+	padding-top:10px;
+}
+.link_block {
+	padding-top:5px;
+	font-family:Arial;
+	font-size:11px;
+	
+}
+.link_block a {
+	padding-left:10px;
+	color:#0877ac;
+	background:url(../images/arrow.png) no-repeat 0% 55%;
+}
+.link_block a:hover {
+	text-decoration:underline;
+	background:url(../images/arrow1.png) no-repeat 0% 55%;
+}
+
+.footer {
+	padding-top:15px;
+	font-size: 10px;
+	color: #8994a0;
+}
+
+.foot_link li {
+	float: left;
+	padding-right: 10px;
+	margin-right: 9px;
+	background:url(../images/sep.png)no-repeat 100% 70%;
+}
+
+.foot_link li a {
+	color: #8994a0;
+}
+
+.foot_link li a:hover {
+	color:#0877ac;
+}
+.vwd4_m502 {
+	position: absolute;
+	right: -1px;
+	top: 15px;
+	overflow: hidden;
+}
+.vwd4_m502 li {
+float: left;
+padding-left: 10px;
+margin-left: 9px;
+background-image: url(../images/arrows_sprite.png);
+background-repeat: no-repeat;
+background-position: -339px -155px;
+}
+.vwd4_m502 li a {
+font-size: .909em;
+color: #8994a0;
+text-decoration: none;
+font-size: 10px;
+}
+.vwd4_m502 li a:hover {
+	color:#0877ac;
+}
+.dealers {
+	position:absolute;
+	right: -1px;
+	top:68px;
+}
+.dealers li {
+	float:left;
+}
+#dealer {
+	width:108px;
+	height:22px;
+	display:block;
+	background:url(../images/501_sprite.png) 0 1px;
+}
+#dealer:hover {
+	background:url(../images/501_sprite.png) 0 -31px;
+}
+#config {
+	width:126px;
+	height:22px;
+	display:block;
+	background:url(../images/501_sprite.png) 0 -73px;
+}
+#config:hover {
+	background:url(../images/501_sprite.png) 0 -105px;
+}
+#facebook {
+	width:21px;
+	height:22px;
+	display:block;
+	background:url(../images/501_sprite.png) 0 -147px;
+}
+#facebook:hover {
+	background-position: 0 -148px;
+}
+#odnoklas {
+	width:21px;
+	height:22px;
+	display:block;
+	background:url(../images/501_sprite.png) 0 -221px;
+}
+#odnoklas:hover {
+	background:url(../images/501_sprite.png) 0 -222px;
+}
+#vk {
+	width:21px;
+	height:22px;
+	display:block;
+	background:url(../images/501_sprite.png) 0 -295px;
+}
+#vk:hover {
+	background:url(../images/501_sprite.png) 0 -296px;
+}
+#youtube {
+	width:21px;
+	height:22px;
+	display:block;
+	background:url(../images/501_sprite.png) 0 -369px;
+}
+#youtube:hover {
+	background:url(../images/501_sprite.png) 0 -370px;
+}
+
+
+.submenu {
+	margin-left:20px;
+	width: 215px;
+	float: left;
+	margin-top: 3px;
+	color: #0877ac;
+}
+
+.submenu li {
+	display: block;
+	border-bottom: 1px solid #cccccc;
+	padding: 7px 0px 7px 0px;
+}
+
+.submenu li a {
+	display: block;
+	color: #33434c;
+	font-size:11px;
+}
+.submenu li a:hover {
+	color: #2274ac;
+}
+
+#activ {
+	padding-left: 10px;
+	background-image: url(../images/arrows_sprite.png);
+	background-repeat: no-repeat;
+	background-position: -472px -19px;
+	color:#2274ac;
+}
+
+.subimage {
+	width:685px;
+	margin:20px 20px 27px 0;
+	
+	float:right;
+}
+
+h1 {
+	font-size:24px;
+}
+
+p {
+	font-family:Arial;
+	font-weight:bold;
+	font-size:11px;
+	color: #33434c;
+	margin:5px 0;
+}
+h2 {
+	font-size:14px;
+	margin:7px 0 3px;
+}
+
+.ultext {
+	font-family:Arial;
+	font-weight:bold;
+	font-size:11px;
+	color: #33434c;
+}
+.ultext li {
+	margin-left:15px;
+	list-style-type: disc;
+}

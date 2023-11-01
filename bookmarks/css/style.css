@@ -1,0 +1,274 @@
+body,html,h1,p {
+	padding:0;
+	margin: 0;
+	font-family: 'Quicksand', sans-serif;
+}
+
+a {
+	outline: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+.right {
+	float: right;
+	position: relative;
+	top: 2px
+}
+img {
+	border: 0;
+	display: block;
+}
+
+.update {
+	position: fixed;
+	top: 10px;
+	right: 10px;
+	z-index: 200;
+	color: #6F6F6F;
+}
+
+	.update span {
+		font-size: 14px;
+		text-transform: lowercase;
+	}
+
+.main-wrap {
+	width: 50%;
+	margin: 0 auto;
+	padding: 0px 1%;
+	position: relative;
+}
+
+.logo {
+	display: block;
+}
+
+	.logo img {
+		width: 70px;
+	}
+
+	.main-wrap .menu {
+		position: fixed;
+		top: 30px;
+		left: 24%;
+		-moz-transform: translateX(-120%);
+		-webkit-transform: translateX(-120%);
+		-o-transform: translateX(-120%);
+		-ms-transform: translateX-120%);
+		transform: translateX(-120%);
+	}
+
+		.main-wrap .menu ul {
+			padding-left: 0;
+			list-style: none;
+			text-align: right;
+		}
+
+			.main-wrap .menu ul a {
+				text-decoration: none;
+				color: #111;
+				line-height: 25px;
+				font-weight: bold;
+			}
+
+				.main-wrap .menu ul a.active {
+					border-bottom: 2px solid #111;
+				}
+
+				.main-wrap .menu ul a:hover {
+					opacity: 0.5;
+				}
+
+
+	.main-wrap .main-content {
+		-moz-box-shadow: 0 0 10px -2px #a1b6bf;
+		-webkit-box-shadow: 0 0 10px -2px #a1b6bf;
+		box-shadow: 0 0 10px -2px #a1b6bf;
+		padding-top: 20px;
+	}
+
+		.main-wrap .main-content a {
+			position: relative;
+			font-family: 'Cuprum', sans-serif;
+			display: block;
+			color: #626262;
+			font-size: 15px;
+			text-decoration: none;
+			margin: 10px 0;
+			padding: 10px 20px;
+			/*background-color: rgb(240, 168, 120);*/
+			background: #fff;
+			/*border-radius: 10px;*/
+			border-bottom: 1px solid #E8E8E8;
+
+			-webkit-transition: all 0.2s ease-out;
+				-moz-transition: all 0.2s ease-out;
+				-ms-transition: all 0.2s ease-out;
+				-o-transition: all 0.2s ease-out;
+				transition: all 0.2s ease-out;
+		}
+
+			.main-wrap .main-content a:hover {
+				-moz-transform: translateY(5px);
+				-webkit-transform: translateY(5px);
+				-o-transform: translateY(5px);
+				-ms-transform: translateY(5px);
+				transform: translateY(5px);
+			}
+
+			.main-wrap .main-content a:last-child {
+				margin-bottom: 0;
+				border-bottom: 0;
+			}
+
+			.main-wrap .main-content a p {
+				float: left;
+				margin: 10px;
+				font-family: 'Cuprum', sans-serif;
+				font-size: 17px;
+				color: #111;
+			}
+
+			.main-wrap .main-content a span {
+				float: right;
+				display: block;
+				background: #EF6464;
+				padding: 5px 10px;
+				margin: 10px;
+				border-radius: 6px;
+				color: #fff;
+				text-transform: uppercase;
+				font-size: 13px;
+				font-family: 'Quicksand', sans-serif;
+				font-weight: bold;
+			}
+
+				.main-wrap .main-content a.html span {
+					background: #F1672C;
+				}
+
+				.main-wrap .main-content a.css span {
+					background: #30A9DC;
+				}
+
+				.main-wrap .main-content a.js span {
+					background: #F1BF26;
+				}
+
+				.main-wrap .main-content a.jQuery span {
+					background: #EC4847;
+				}
+
+				.main-wrap .main-content a.design span {
+					background: #EF6464;
+				}
+
+			.main-wrap .main-content a div.star {
+				position: absolute;
+				top: 50%;
+				right: -35px;
+				width: 24px;
+				height: 24px;
+				margin-top: -12px;
+				background: url('../img/star.png') no-repeat;
+				-webkit-transition: all 0.2s ease-out;
+				-moz-transition: all 0.2s ease-out;
+				-ms-transition: all 0.2s ease-out;
+				-o-transition: all 0.2s ease-out;
+				transition: all 0.2s ease-out;
+				opacity: 0.2;
+			}
+
+				.main-wrap .main-content a div.star.active {
+					opacity: 1;
+				}
+				.main-wrap .main-content a div.star:hover {
+					opacity: 1;
+				}
+
+				.main-wrap .main-content a div.star:after {
+					content: 'Add to favorites';
+					display: block;
+					position: absolute;
+					left: 34px;
+					padding: 5px 10px;
+					opacity: 0;
+					color: #fff;
+					width: 81px;
+					font-size: 13px;
+					white-space: nowrap;
+					border-radius: 15px;
+					background: rgb(22,43,37); /* Old browsers */
+					background: -moz-linear-gradient(-45deg,  rgba(22,43,37,1) 0%, rgba(96,96,96,1) 100%); /* FF3.6+ */
+					background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(22,43,37,1)), color-stop(100%,rgba(96,96,96,1))); /* Chrome,Safari4+ */
+					background: -webkit-linear-gradient(-45deg,  rgba(22,43,37,1) 0%,rgba(96,96,96,1) 100%); /* Chrome10+,Safari5.1+ */
+					background: -o-linear-gradient(-45deg,  rgba(22,43,37,1) 0%,rgba(96,96,96,1) 100%); /* Opera 11.10+ */
+					background: -ms-linear-gradient(-45deg,  rgba(22,43,37,1) 0%,rgba(96,96,96,1) 100%); /* IE10+ */
+					background: linear-gradient(135deg,  rgba(22,43,37,1) 0%,rgba(96,96,96,1) 100%); /* W3C */
+					filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#162b25', endColorstr='#606060',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+				}
+
+					.main-wrap .main-content a div.star:hover:after {
+						opacity: 1;
+					}
+
+				.main-wrap .main-content a div.star.active:after {
+					content: 'Remove from favorites';
+					display: block;
+					position: absolute;
+					left: 34px;
+					padding: 5px 10px;
+					opacity: 0;
+					color: #fff;
+					width: 114px;
+					font-size: 13px;
+					white-space: nowrap;
+					border-radius: 15px;
+					background: rgb(22,43,37); /* Old browsers */
+					background: -moz-linear-gradient(-45deg,  rgba(22,43,37,1) 0%, rgba(96,96,96,1) 100%); /* FF3.6+ */
+					background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(22,43,37,1)), color-stop(100%,rgba(96,96,96,1))); /* Chrome,Safari4+ */
+					background: -webkit-linear-gradient(-45deg,  rgba(22,43,37,1) 0%,rgba(96,96,96,1) 100%); /* Chrome10+,Safari5.1+ */
+					background: -o-linear-gradient(-45deg,  rgba(22,43,37,1) 0%,rgba(96,96,96,1) 100%); /* Opera 11.10+ */
+					background: -ms-linear-gradient(-45deg,  rgba(22,43,37,1) 0%,rgba(96,96,96,1) 100%); /* IE10+ */
+					background: linear-gradient(135deg,  rgba(22,43,37,1) 0%,rgba(96,96,96,1) 100%); /* W3C */
+					filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#162b25', endColorstr='#606060',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+				}
+
+					.main-wrap .main-content a div.star.active:hover:after {
+						opacity: 1;
+					}
+
+				.main-wrap .main-content a:hover div.star {
+					-moz-transform: translateY(-5px);
+					-webkit-transform: translateY(-5px);
+					-o-transform: translateY(-5px);
+					-ms-transform: translateY(-5px);
+					transform: translateY(-5px);
+				}
+
+@media only screen and (min-width : 320px) and (max-width : 568px) {
+
+.update {
+	font-size: 10px;
+}
+
+.update span {
+		font-size: 8px;
+	}
+
+.logo img {
+		width: 50px;
+		z-index: 200;
+	}
+
+.main-wrap .menu ul a {
+	font-size: 10px;
+	line-height: 15px;
+	z-index: 200;
+}
+}
