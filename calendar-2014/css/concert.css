@@ -1,0 +1,91 @@
+
+.main .week .white .pop_up {
+	background:#ffffff;
+	width:770px;
+	height:560px;
+	display:none;
+	padding:0px;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size:16px;
+	color:#000000;
+	z-index:20;
+	float:none;
+	border:0;
+	position:absolute;
+}
+#horse_the_band_desc {
+	top:-225px;
+	left:153px;
+}
+#armin_van_buuren_desc {
+	top:-225px;
+	left:-617px;
+}
+#flyleaf_desc {
+	top:-337px;
+	left:-309px;
+}
+#wodb_desc {
+	top:-337px;
+	left:-617px;
+	
+}
+#iktpq_desc {
+	top:-449px;
+	left:-771px;
+	
+}
+#eskimo_desc {
+	top:-112px;
+	left:-154px;
+}
+#pirate_station_desc {
+	top:-225px;
+	left:-617px;
+}
+#h_h_desc {
+	top:-449px;
+	left:0;
+}
+#es_desc {
+	top:-112px;
+	left:0;
+}
+#blue_october_desc {
+	top:-112px;
+	left:-309px;
+}
+#ennio_desc {
+	top:-225px;
+	left:-309px;
+}
+#apollo_desc {
+	top:-113px;
+	left:-617px;
+}
+#dba_desc {
+	top:-337px;
+	left:-463px;
+}
+#etf_desc {
+	top:-449px;
+	left:-309px;
+}
+#lb_desc {
+	top:-449px;
+	left:-463px;
+}
+#bmth_desc {
+	top:-112px;
+	left:-771px;
+}
+#pod_desc {
+	top:-337px;
+	left:0;
+}
+.horse_the_band {
+	background:url(../images/bg-dark1.png);
+}
+.armin_van_buuren {
+	background:url(../images/bg-dark1.png);
+}

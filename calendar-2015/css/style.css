@@ -1,0 +1,79 @@
+body {
+	font-family: 'PT Sans', sans-serif;
+}
+.intro {
+	height: 100%;
+}
+.logo {
+	display: none;
+	width: 150px;
+	position: fixed;
+	left: 6.1%;
+	z-index: 9999;
+	background: rgba(0,0,0,0.5);
+}
+	.logo img {
+		display: block;
+		width: 110px;
+		margin: 0 auto;
+		padding: 10px 0;
+	}
+
+
+.intro .left {
+	float:left;
+	width: 20%;
+	height: 100%;
+	display: table;
+}
+
+	.intro .left .left-inner {
+		height: 100%;
+		display: table-cell;
+		vertical-align: middle;
+		text-align: center;
+		font-weight: bold;
+	}
+
+		.intro .left .left-inner p {
+			font-size: 200%;
+			margin: 0;
+		}
+
+			.intro .left .left-inner p.red {
+				color: #F44336;
+				font-size: 300%;
+			}
+
+			.intro .left .left-inner p:last-of-type {
+				margin-bottom: 20px;
+			}
+
+		.intro .left .left-inner a {
+			margin-top: 10px;
+			padding: 7px 15px;
+			text-decoration: none;
+			font-size: 120%;
+			color: #fff;
+			background: #F44336;
+		}
+
+		.intro .left .left-inner a:hover {
+			opacity: 0.8;
+		}
+
+.intro .right {
+	float:left;
+	width: 80%;
+	height: 100%;
+}
+
+	.intro .right .right-inner {
+		background-repeat:no-repeat;
+		/*background-position: 0% 50%;*/
+		background-size: cover;
+		/*position: fixed;*/
+		height: 100%;
+		width: 100%;
+		z-index: 1;
+	}

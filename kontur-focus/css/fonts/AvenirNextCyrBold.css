@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'AvenirNextCyrBold';
+    src: url('fonts/AvenirNextCyrBold.eot');
+    src: url('fonts/AvenirNextCyrBold.eot') format('embedded-opentype'),
+         url('fonts/AvenirNextCyrBold.woff2') format('woff2'),
+         url('fonts/AvenirNextCyrBold.woff') format('woff'),
+         url('fonts/AvenirNextCyrBold.ttf') format('truetype'),
+         url('fonts/AvenirNextCyrBold.svg#AvenirNextCyrBold') format('svg');
+}

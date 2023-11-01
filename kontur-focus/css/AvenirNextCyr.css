@@ -1,0 +1,54 @@
+@font-face {
+    font-family: 'AvenirNextCyrBold';
+    src: url('fonts/AvenirNextCyrBold.eot');
+    src: url('fonts/AvenirNextCyrBold.eot') format('embedded-opentype'),
+         url('fonts/AvenirNextCyrBold.woff2') format('woff2'),
+         url('fonts/AvenirNextCyrBold.woff') format('woff'),
+         url('fonts/AvenirNextCyrBold.ttf') format('truetype'),
+         url('fonts/AvenirNextCyrBold.svg#AvenirNextCyrBold') format('svg');
+}
+@font-face {
+    font-family: 'AvenirNextCyrDemi';
+    src: url('fonts/AvenirNextCyrDemi.eot');
+    src: url('fonts/AvenirNextCyrDemi.eot') format('embedded-opentype'),
+         url('fonts/AvenirNextCyrDemi.woff2') format('woff2'),
+         url('fonts/AvenirNextCyrDemi.woff') format('woff'),
+         url('fonts/AvenirNextCyrDemi.ttf') format('truetype'),
+         url('fonts/AvenirNextCyrDemi.svg#AvenirNextCyrDemi') format('svg');
+}
+@font-face {
+    font-family: 'AvenirNextCyrLight';
+    src: url('fonts/AvenirNextCyrLight.eot');
+    src: url('fonts/AvenirNextCyrLight.eot') format('embedded-opentype'),
+         url('fonts/AvenirNextCyrLight.woff2') format('woff2'),
+         url('fonts/AvenirNextCyrLight.woff') format('woff'),
+         url('fonts/AvenirNextCyrLight.ttf') format('truetype'),
+         url('fonts/AvenirNextCyrLight.svg#AvenirNextCyrLight') format('svg');
+}
+@font-face {
+    font-family: 'AvenirNextCyrMedium';
+    src: url('fonts/AvenirNextCyrMedium.eot');
+    src: url('fonts/AvenirNextCyrMedium.eot') format('embedded-opentype'),
+         url('fonts/AvenirNextCyrMedium.woff2') format('woff2'),
+         url('fonts/AvenirNextCyrMedium.woff') format('woff'),
+         url('fonts/AvenirNextCyrMedium.ttf') format('truetype'),
+         url('fonts/AvenirNextCyrMedium.svg#AvenirNextCyrMedium') format('svg');
+}
+@font-face {
+    font-family: 'AvenirNextCyrMediumItalic';
+    src: url('fonts/AvenirNextCyrMediumItalic.eot');
+    src: url('fonts/AvenirNextCyrMediumItalic.eot') format('embedded-opentype'),
+         url('fonts/AvenirNextCyrMediumItalic.woff2') format('woff2'),
+         url('fonts/AvenirNextCyrMediumItalic.woff') format('woff'),
+         url('fonts/AvenirNextCyrMediumItalic.ttf') format('truetype'),
+         url('fonts/AvenirNextCyrMediumItalic.svg#AvenirNextCyrMediumItalic') format('svg');
+}
+@font-face {
+    font-family: 'AvenirNextCyrRegular';
+    src: url('fonts/AvenirNextCyrRegular.eot');
+    src: url('fonts/AvenirNextCyrRegular.eot') format('embedded-opentype'),
+         url('fonts/AvenirNextCyrRegular.woff2') format('woff2'),
+         url('fonts/AvenirNextCyrRegular.woff') format('woff'),
+         url('fonts/AvenirNextCyrRegular.ttf') format('truetype'),
+         url('fonts/AvenirNextCyrRegular.svg#AvenirNextCyrRegular') format('svg');
+}

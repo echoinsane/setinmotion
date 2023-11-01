@@ -1,0 +1,304 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+	<title></title>
+	<link href="../css/tires.css" rel="stylesheet" media="all">
+	<link rel="stylesheet" type="text/css" media="all" href="../css/styles.css">
+	<link rel="shortcut icon" href="../images/favicon.ico">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script type="text/javascript" src="../js/cufon-yui.js"></script>
+	<script type="text/javascript" src="../js/vw.fonts2.js"></script>
+	<script type="text/javascript" src="../js/FuturaDemiC_600.font.js"></script>
+	 <script type="text/javascript">
+            Cufon.replace(".cuf", {hover: true});
+            
+            
+            $(function () {
+        
+                function inputPlaceHolder(input) {
+                    input = $(input);
+                    placeholder = input.data('placeholder');
+                    input.val(placeholder);
+                    input.removeClass('filled');
+                    $(input).val($(input).data('placeholder'));
+                }
+        
+                function inputBlur() {
+                    var input = $(this);
+                    if (input.val() == '')
+                        inputPlaceHolder(this);
+                    else
+                        input.addClass('filled');
+                }
+        
+                function inputFocus() {
+                    var input = $(this);
+                    placeholder = input.data('placeholder');
+                    if (!input.hasClass('filled'))
+                        $(this).val('');
+                }
+                function inputInit() {
+                    var input = $(this);
+                    input.focus(inputFocus);
+                    input.blur(inputBlur);
+                    if (!input.val())
+                        inputPlaceHolder(input);
+                    else
+                        input.addClass('filled');
+                }
+                $('#search-form input').each(inputInit);
+            });
+        </script>
+	 
+</head>
+<body>
+	<div class="main">
+		<div class="header">
+			<a href="http://www.volkswagen.ru/ru.html" id="vwd4_logo"><img src="../images/logo_new.jpg" /></a>
+			<ul class="vwd4_m500">
+				<ul id="ddmenu">
+        <li id="modeli"><a href="#"></a></li>
+        <li id="specpred"><a  href="#" class="top"></a>
+          <ul>
+			<li>
+				<a href="#">Акции и спецпредложения</a>
+			</li>
+			<li>
+				<a href="#">Volkswagen Finance</a>
+			</li>
+			<li>
+				<a href="#">Корпоративные продажи</a>
+			</li>
+			<li >
+				<a style="border-bottom:1px solid #ffffff;" href="#">Автомобили в наличии</a>
+			</li>
+          </ul>
+        </li>
+        <li id="service"><a href="#" class="top1"></a>
+          <ul>
+           <li>
+								<a href="#">Volkswagen сервис</a>
+							</li>
+							<li>
+								<a href="#">Оригинальные детали</a>
+							</li>
+							<li>
+								<a href="#">Оригинальные аксессуары</a>
+							</li>
+							<li>
+								<a href="#">Полезные советы</a>
+							</li>
+							<li>
+								<a href="#">Сервис для корпоративных клиентов</a>
+							</li>
+							<li>
+								<a href="#">Послегарантийная сервисная поддержка</a>
+							</li>
+							<li>
+								<a href="#">Оптовые продажи запчастей</a>
+							</li>
+							<li>
+								<a href="#">Гарантия мобильности</a>
+							</li>
+							<li>
+								<a style="border-bottom:1px solid #ffffff;" href="#">Будьте всегда на связи!</a>
+							</li>
+          </ul>
+        </li>
+        <li id="auto"><a href="#" class="top2"></a>
+          <ul style="width:200px;">
+            <li>
+								<a href="#">Программа Das WeltAuto</a>
+							</li>
+							<li>
+								<a href="#">Автомобили с пробегом в наличии</a>
+							</li>
+							<li>
+								<a href="#">Дилеры Das WeltAuto</a>
+							</li>
+							<li>
+								<a href="#">Das WeltAuto с гарантией</a>
+							</li>
+							<li>
+								<a href="#">Преимущества Das WeltAuto</a>
+							</li>
+							<li>
+								<a style="border-bottom:1px solid #ffffff;" href="#">Полезная информация</a>
+							</li>
+          </ul>
+        </li>
+        <li id="world"><a href="#" class="top3"></a>
+			<ul>
+				<li>
+								<a href="#">Новости</a>
+							</li>
+							<li>
+								<a href="#">Выставки</a>
+							</li>
+							<li>
+								<a href="#">Спонсорство</a>
+							</li>
+							<li>
+								<a href="#">Журналы</a>
+							</li>
+							<li>
+								<a href="#">Стеклянная мануфактура</a>
+							</li>
+							<li>
+								<a href="#">История</a>
+							</li>
+							<li>
+								<a href="#">WRC</a>
+							</li>
+							<li>
+								<a href="#">Think Blue. Think Innovative</a>
+							</li>
+							<li>
+								<a href="#">MQB: Начало новой эры</a>
+							</li>
+							<li>
+								<a href="#">Мой мир. Мой Volkswagen</a>
+							</li>
+							<li>
+								<a href="#">Пресса о Volkswagen</a>
+							</li>
+							<li>
+								<a style="border-bottom:1px solid #ffffff;" href="#">Приложения</a>
+							</li>
+			</ul>
+		</li><div style="clear:both;"></div>
+      </ul></ul>
+					
+			
+			
+			<ul class="dealers">
+				<li><a id="dealer" href="#"></a></li>
+				<li><a id="config" href="#"></a></li>
+				<li><a id="facebook" href="#"></a></li>
+				<li><a id="odnoklas" href="#"></a></li>
+				<li><a id="vk" href="#"></a></li>
+				<li><a id="youtube" href="#"></a></li>
+			</ul>
+			<ul class="vwd4_m502"><li style="background-image:none;" ><a href="http://cars.volkswagen.ru/">Автомобили в наличии</a></li><li><a href="http://www.volkswagen.ru/ru.html">Главная</a></li><li><a href="http://www.volkswagen.ru/ru/company/contact.html">Контакты</a></li><li><a href="http://www.volkswagen.ru/ru/company/vacancies.html">Вакансии</a></li><li><a href="http://www.volkswagen.ru/ru/tools/navigation/meta/site_map.html">Карта сайта</a></li><li><a href="http://www.volkswagen.ru/ru/tools/navigation/meta/search.html">Поиск</a></li></ul>
+
+		</div>
+		<div class="obertka">
+		<div class="content">
+			<div class="navigation2">
+			<a class="nav_link_service" href="#"></a>
+			<ul >
+				<li><a id="nav2_link1" href="#"></a></li>
+				<li><a id="nav2_link2" href="#"></a></li>
+				<li><a id="nav2_link3" href="#"></a></li>
+				<li><a id="nav2_link4" href="#"></a></li>
+				<li><a id="nav2_link5" href="#"></a></li>
+				<li><a id="nav2_link6" href="#"></a></li>
+				<li><a id="nav2_link7" href="#"></a></li>
+				<li><a id="nav2_link8" href="#"></a></li>
+				<li><a id="nav2_link9" href="#"></a></li>
+			</ul>
+			</div>
+			<div >
+				<div class="submenu">
+					 <ul>
+						<li><a href="http://www.volkswagen-eshop.ru/">Online-витрина оригинальных аксессуаров</a></li>
+						<li ><a id="activ" href='../bud-na-svyazi'>Будьте всегда на связи</a></li>
+						<li><a href='../bud-na-svyazi'>Каталоги аксессуаров</a></li>
+						<li><a href='../bud-na-svyazi'>Оригинальные аксессуары для Volkswagen Jetta</a></li>
+						<li><a href='../bud-na-svyazi'>Оригинальные аксессуары для нового Golf</a></li>
+ 						<li><a href='../bud-na-svyazi'>Повод для ярких перемен! Летняя акция по аксессуарам</a></li>
+						<li style="border-bottom:none;"><a href='../bud-na-svyazi'>Специальное предложение на детские кресла!</a></li>
+					</ul>                    
+				</div>
+				
+				<div class="subimage"><img src="../images/bud-na-svyazi.jpg" />
+					<h1 class="cuf">Будьте всегда на связи!</h1>
+					<p>Уже сейчас в официальных дилерских центрах Volkswagen действует специальное предложение на оригинальные радиомагнитолы Volkswagen RMT 100 и Blue Sound ВТ.</p>
+					<h2 class="cuf">Радиомагнитола RMT 100. </h2>
+					<p>Единство мультимедийных возможностей.</p>
+					<p>Оснащение:</p>
+						<ul class="ultext">
+							<li>MP3 магнитола, USB-порт, вход AUX-IN;</li>
+							<li>Функция громкой связи Bluetooth;</li>
+							<li>Для установки необходима специальная монтажная рамка.</li>
+						</ul>
+				
+					<p style="color:#000000;">Рекомендованная розничная цена -<span style="font-size:14px;" class="cuf"> 6 903 руб. 00 коп.</span></p>
+					<h2 class="cuf">Радиомагнитола Volkswagen Blue Sound ВТ с функцией Bluetooth.</h2>
+					<p>Оснащение:</p>
+						<ul class="ultext">
+							<li>Синяя подсветка Volkswagen;</li>
+							<li>Подсветка клавиатуры: красная/синяя (можно переключать);</li>
+							<li>Устройство чтения карт SD и MMC; USB вход (фронтальный);</li>
+							<li>CD, CD-R, CD-RW, MP3 (с компакт-дисков или карт SD);</li>
+							<li>Синусоидальная мощность: 4 x 22 Вт;</li>
+							<li>Макс. мощность: 4 x 35 Вт;</li>
+							<li>Вкл. устройство громкой связи с функцией Bluetooth hands-free;</li>
+							<li>1-Din съемная передняя панель.</li>
+						</ul>
+					<br />
+					<p>Больше информации на сайте оригинальных аксессуаров Volkswagen:</p>
+					<p><a style="font-weight:normal; color:#2274ac;" href="http://volkswagen-eshop.ru">http://volkswagen-eshop.ru</a></p>
+					<p>Подробности акции вы можете узнать у официальных дилеров Volkswagen:</p>
+					<p><a style="font-weight:normal; color:#2274ac;" href="http://dealers.volkswagen.ru/">http://dealers.volkswagen.ru/</a></p>
+					<p style="color:#8994a0;">*Указаны рекомендованные розничные цены за 1 шт., в руб., с НДС.</p>
+				</div>
+				<div style="clear:both;"></div>
+			</div>
+			
+			<div class="subcontent">
+				
+			</div>
+		</div>
+		
+		<div class="footer">
+		<div style="float:left;"><span>*) Представленные на изображениях автомобили могут отличаться от серийных моделей</span></div>
+		<div style="float:right;width:500px;">
+			<ul class="foot_link">
+				<li>© Volkswagen 2013</li>
+				<li><a href="http://www.volkswagen.ru/ru.html">Фольксваген Россия</a></li>
+				<li><a href="http://www.volkswagen.ru/ru/tools/navigation/footer/rights.html">Правовые аспекты</a></li>
+				<li><a href="http://www.volkswagen.com/">Volkswagen International</a></li>
+				<li><a href="http://www.facebook.com/volkswagenrussia">Volkswagen на Facebook</a></li>
+				<li><a href="http://www.facebook.com/VolkswagenServiceRussia">Volkswagen Service на Facebook</a></li>
+				<li><a href="http://vk.com/club22130230">Volkswagen ВКонтакте</a></li>
+				<li><a href="http://www.youtube.com/VolkswagenRu">Volkswagen на YouTube</a></li>
+				<li><a href="http://m.volkswagen.ru">Мобильная версия</a></li>
+			</ul>
+		</div>
+		</div>
+		</div>
+	</div>
+<script type="text/javascript">
+$(document).ready(function(){
+  $('a').on('click', function(e){
+    e.preventDefault();
+  });
+    
+  $('#ddmenu > li').hover(function () {
+     clearTimeout($.data(this,'timer'));
+     $('ul',this).stop(true,true).slideDown(200);
+	 $('a.top', this).addClass('hover');
+	 $('a.top1', this).addClass('hover1');
+	 $('a.top2', this).addClass('hover2');
+	 $('a.top3', this).addClass('hover3');
+  }, function () {
+    $.data(this,'timer', setTimeout($.proxy(function() {
+	  var $top_link = $('a.top', this);
+	  var $top_link1 = $('a.top1', this);
+	  var $top_link2 = $('a.top2', this);
+	  var $top_link3 = $('a.top3', this);
+      $('ul',this).stop(true,true).slideUp(200, function() {
+		$top_link.removeClass('hover');
+		$top_link1.removeClass('hover1');
+		$top_link2.removeClass('hover2');
+		$top_link3.removeClass('hover3');
+	  });
+    }, this), 100));
+  });
+
+});
+</script>
+</body>
+</html>

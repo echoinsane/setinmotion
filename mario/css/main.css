@@ -1,0 +1,588 @@
+
+html, body { height: 100%; margin: 0;
+
+    background:#fafcff;
+    position:relative;
+}
+img {
+    border:0;
+    display: block;
+}
+p {
+    margin: 0;
+}
+h1 {
+    margin: 0;
+    font-weight: normal;
+}
+.clear {
+    clear: both;
+}
+.fixed {
+    width:940px;
+    height:80px;
+    margin:0 auto;
+    position:relative;
+}
+.header {
+    width:100%;
+    position: fixed;
+    top:0px;
+    background: #ffffff;
+    z-index: 9999;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+
+}
+.logo {
+    display: block;
+    position:absolute;
+    top: 23px;
+    left: 0;
+}
+.navigation {
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+    position: absolute;
+    top:34px;
+    left:211px;
+}
+.navigation li{
+    display: inline-block;
+}
+.navigation li a{
+    text-transform: uppercase;
+    display: block;
+    text-decoration: none;
+    color: #575859;
+    font-size:12px;
+    border:1px solid #fafcff;
+    padding:5px 10px;
+    -webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -ms-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+    transition: 0.5s ease;
+}
+.navigation li a:hover{
+    border:1px solid #0aa6f9;
+}
+
+.navigation li a.active {
+    color:#ffffff;
+    background: #0aa6f9;
+    border:1px solid #0aa6f9;
+}
+
+.basket {
+    text-decoration: none;
+    position:absolute;
+    top:0;
+    right:1px;
+    text-transform: uppercase;
+    display: block;
+    width:70px;
+    height: 19px;
+    padding-left: 35px;
+    padding-top: 8px;
+    font-size:12px;
+    line-height: 12px;
+    color: #ffffff;
+    background: url('../img/service/basket.png') no-repeat ;
+}
+.search input {
+    position: absolute;
+    right: 0;
+    top: 37px;
+    width: 165px;
+    height: 22px;
+    padding-left: 5px;
+    border: 0;
+    border-bottom: 1px solid #cbd1d9;
+    font-size: 10px;
+    font-style: italic;
+    color: #d1d6de;
+    outline: 0;
+    background:#fafcff;
+    background: url('../img/service/search.png') no-repeat 150px 4px ;
+}
+
+.rotator {
+    margin-top: 80px;
+    width: 100%;
+    height: 270px;
+    background: url('../img/service/rotator_bg.png');
+
+}
+.main {
+    width: 940px;
+    margin: 0 auto;
+    margin-top: 24px;
+}
+.sidebar {
+    float: left;
+    width: 220px;
+}
+.content {
+    float: left;
+    width: 700px;
+    margin-left: 20px;
+}
+.wrapper {
+    margin: 15px 0;
+
+}
+.bottom {
+    margin-top:0;
+}
+.brand {
+    margin-bottom: 20px;
+    height: 47px;
+    width: 700px;
+    background: url('../img/service/shadow.png') repeat-x 0 45px;
+}
+.brand_content {
+    height: 27px;
+    width: 684px;
+    padding: 8px 7px;
+    border: 1px solid #dee5ed;
+}
+.main .content .brand .brand_content select {
+    font-size: 12px;
+    font-style: italic;
+    color: #575859;
+}
+.main .content .brand .brand_content .search_brand {
+    width: 447px;
+    height: 24px;
+    padding-left: 5px;
+    margin-left: 7px;
+    margin-right: 7px;
+    border: 0;
+    border-bottom: 1px solid #cbd1d9;
+    font-size: 12px;
+    font-style: italic;
+    color: #575859;
+    outline: 0;
+    background:#fafcff;
+}
+.main .content .brand .brand_content .submit {
+    width: 65px;
+    height: 27px;
+    border: 0;
+    padding: 0;
+    outline: 0;
+    background: #0aa6f9;
+    color: #ffffff;
+    font-family: 'Ubuntu', sans-serif;
+    font-style: italic;
+    font-size: 11px;
+    cursor: pointer;
+}
+.submenu {
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+    margin-bottom: 23px;
+}
+.submenu li{
+    display: inline-block;
+    padding-right: 12px;
+}
+.submenu li a{
+    display: block;
+    text-decoration: none;
+    color: #575859;
+    font-size:12px;
+    font-family: 'Ubuntu', sans-serif;
+    font-style: italic;
+}
+.submenu li a.active{
+    color: #0aa6f9;
+}
+.submenu li.arrow {
+    background: url('../img/service/arrow_menu.png') no-repeat 100% 3px;
+}
+.block {
+    position: relative;
+    width: 218px;
+    height: 217px;
+    border: 1px solid #cbd1d9;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 38px;
+    -moz-box-shadow: 0 1px 4px -1px #cbd1d9;
+    -webkit-box-shadow: 0 1px 4px -1px #cbd1d9;
+    box-shadow: 0 1px 4px -1px #cbd1d9;
+}
+.block_img {
+    width: 218px;
+    height: 119px;
+}
+.block_name {
+    padding: 23px 10px 0;
+    width: 198px;
+    height: 38px;
+    border-bottom: 1px solid #cbd1d9;
+    background: #eaf3ff;
+    font-size: 12px;
+    font-weight: 500;
+    font-family: 'Ubuntu', sans-serif;
+    color: #575859;
+}
+.block_price {
+    padding: 10px 10px 0;
+    width: 198px;
+    height: 25px;
+    border-top: 1px solid #dfdfdf;
+    background: #e8e8e8;
+    font-size: 12px;
+    font-weight: 500;
+    font-family: 'Ubuntu', sans-serif;
+    color: #575859;
+}
+.block_price span {
+    color: #0fb6fa;
+
+}
+.block_basket {
+    position: absolute;
+    bottom: 8px;
+    right: 20px;
+}
+.zoom_icon {
+    display: block;
+    position: absolute;
+    top: 97px;
+    left: 90px;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+}
+.sidebar_menu {
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+}
+.sidebar_menu li a{
+    display: block;
+    text-decoration: none;
+    color: #575859;
+    font-size:12px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    line-height: 20px;
+}
+.sidebar_menu li a.active{
+    color: #0aa6f9;
+}
+.sidebar_menu li a:hover {
+    text-decoration: underline;
+}
+.wrapper-small {
+    margin: 23px 0;
+}
+.stock h3 {
+    font-size: 14px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    font-style: italic;
+    color: #0aa6f9;
+    margin: 0;
+}
+.stock_block {
+    width: 218px;
+    border: 1px solid #31aff9;
+    margin: 10px 0 20px;
+}
+.stock_block a{
+   display: block;
+    text-decoration: none;
+}
+.stock_block img{
+    width: 218px;
+    height: 102px;
+}
+.stock_block .stock_text {
+    color: #ffffff;
+    font-size: 11px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    background: #31aff9;
+    padding: 9px 25px 9px 9px;
+    position: relative;
+    line-height: 15px;
+}
+.stock_block .stock_text img{
+    position: absolute;
+    bottom: 8px;
+    right: 9px;
+    width: 14px;
+    height: 14px;
+}
+.sidebar p {
+    color: #575859;
+    font-size: 11px;
+    font-family: 'Ubuntu', sans-serif;
+    font-style: italic;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.main .sidebar form {
+    height: 27px;
+}
+.main .sidebar .email {
+    outline: 0;
+    border: 1px solid #cbd1d9;
+    width: 108px;
+    height: 25px;
+    padding: 0;
+    padding-left: 10px;
+    font-size: 10px;
+    font-family: 'Ubuntu', sans-serif;
+    font-style: italic;
+    margin: 0;
+    float: left;
+    background:#fafcff;
+}
+.main .sidebar .submit {
+    float: right;
+    outline: 0;
+    border: 0;
+    padding: 0;
+    background: #0aa6f9;
+    color: #ffffff;
+    font-family: 'Ubuntu', sans-serif;
+    font-style: italic;
+    font-size: 11px;
+    cursor: pointer;
+    width: 95px;
+    height: 27px;
+}
+.main_foot .news {
+    float:right;
+    width: 700px;
+}
+.main_foot .news h3{
+    color: #717478;
+    font-family: 'Ubuntu', sans-serif;
+    font-style: italic;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 13px;
+}
+.news_block {
+    width: 220px;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 25px;
+}
+.news_block a.first {
+    color: #0fb6fa;
+    font-family: 'Ubuntu', sans-serif;
+    font-style: italic;
+    font-size: 13px;
+    margin-bottom: 7px;
+    text-decoration: none;
+    display: block;
+}
+.news_block a.first:hover {
+    text-decoration: underline;
+}
+.news_block p {
+    color: #737373;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 12px;
+}
+.news_block a.last {
+    float: right;
+    width: 85px;
+    text-decoration: none;
+    border-bottom: 1px solid #d1ecfe;
+    display: block;
+    color: #0fb6fa;
+    font-family: 'Ubuntu', sans-serif;
+    font-style: italic;
+    font-size: 11px;
+    padding-right: 8px;
+    background: url("../img/service/arrow-news.png") no-repeat 100% 4px;
+}
+
+
+/* START footer*/
+.footer {
+    border-top: 1px solid #cbd1d9;
+    padding: 11px 0;
+    position: relative;
+}
+.footer p {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 10px;
+    color: #8d8d8d;
+}
+.footer ul {
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+    position: absolute;
+    top:4px;
+    right: 0;
+}
+.footer ul li{
+    display: inline-block;
+    border-right: 1px solid #cbd1d9;
+    height: 12px;
+}
+.footer ul li a{
+    display: block;
+    text-decoration: none;
+    color: #8d8d8d;
+    font-family: 'Ubuntu', sans-serif;
+    font-size:10px;
+    padding: 0 12px 0 10px;
+}
+.footer ul li.last {
+    border-right: 0;
+}
+.footer ul li.last a{
+    padding-right: 0;
+}
+/* END footer*/
+
+.slider {
+    width: 1052px;
+    position: relative;
+    margin: 0 auto;
+}
+
+
+
+/*Start SlidesJS Optional*/
+#slides .slidesjs-container{
+    margin: 0 auto;
+}
+#slides .slidesjs-control {
+    margin: 0 auto;
+    margin-top: 1px;
+}
+#slides {
+    display: none;
+    position: relative;
+}
+
+#slides .slidesjs-navigation {
+
+}
+
+#slides .slidesjs-previous {
+    padding: 30px 31px 30px 0;
+    background: url('../img/service/slider-arrow-left.png');
+    position: absolute;
+    top: 105px;
+    left: 0px;
+
+}
+
+#slides .slidesjs-next {
+    padding: 30px 30px 29px 0;
+    background: url('../img/service/slider-arrow-right.png');
+    position: absolute;
+    top: 105px;
+    right: 0px;
+}
+
+.slidesjs-pagination {
+    margin: 0;
+    position: absolute;
+    bottom: 20px;
+    padding-left: 0;
+    left: 482px;
+    list-style: none;
+    z-index: 100;
+}
+
+.slidesjs-pagination li {
+    float: left;
+    margin: 0 10px;
+}
+
+.slidesjs-pagination li a {
+    display: block;
+    width: 10px;
+    height: 0;
+    padding-top: 10px;
+    background-image: url('../img/service/navigate_dot.png');
+    background-position:-19px 0;
+    float: left;
+    overflow: hidden;
+}
+
+.slidesjs-pagination li a.active,
+.slidesjs-pagination li a:hover.active {
+    background-position:0 0;
+}
+
+.navbar {
+    overflow: hidden;
+}
+.slide .text {
+    width: 236px;
+    height: 250px;
+    float: left;
+    padding: 10px;
+    color: #ffffff;
+    font-family: 'Ubuntu', sans-serif;
+}
+.slide .text h1 {
+    font-size:56px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+.slide .text p {
+    color:#ace1f9;
+    font-size:22px;
+    padding-left: 3px;
+    margin-bottom: 20px;
+}
+.slide .text a {
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+    font-size:24px;
+    padding-left: 3px;
+    width: 164px;
+    height: 28px;
+    background: url('../img/service/slide_arrow.png') no-repeat 100% 0;
+}
+.slide img {
+    float: left;
+}
+.slide .empty {
+    width: 165px;
+    height: 270px;
+    float: left;
+}
+.slider .contacts {
+    z-index: 1000;
+    padding-right: 3px;
+    position: absolute;
+    top: 35px;
+    right: 65px;
+    color: #ffffff;
+    font-family: 'Ubuntu', sans-serif;
+    font-size:14px;
+    text-align: right;
+    font-style: italic;
+}
+.slider .contacts p {
+    height: 17px;
+    margin-bottom: 5px;
+}
+.slider .contacts .first_p {
+    background: url("../img/service/phone.png") no-repeat 40px 0;
+}
+.slider .contacts a {
+    color: #c0ffff;
+    font-size:12px;
+}
+/*End SlidesJS Optional*/

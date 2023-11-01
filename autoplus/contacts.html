@@ -1,0 +1,166 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Авто Плюс +</title>
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+	<link href="css/css.css" rel="stylesheet" media="all">
+	<meta http-equiv="content-type" content="text/html; charset=utf8">
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+	<script src="js/js.js"></script>
+    <script src="js/service.js"></script>
+	</head>
+<body>
+    <div class="head-wrap">
+        <div class="head">
+            <p class="big">авто плюс</p>
+            <p class="small">Выбирая Мерседес, вы делаете шаг вперед</p>
+            <div class="cross"></div>
+        </div>
+    </div>
+
+    <div class="menu-wrap">
+        <div class="menu">
+            <ul class="main-ul">
+                <li class="main-link"><a href="#">Дополнительное оборудование</a>
+                    <ul class="submenu">
+                        <li><a href="#">1</a></li>
+                        <li class="sublink"><a href="#" class="sub">2</a>
+                            <ul class="subsubmenu">
+                                <li><a href="">1</a></li>
+                                <li><a href="">2</a></li>
+                                <li><a href="">3</a></li>
+                                <li><a href="">4</a></li>
+                            </ul>
+                        </li>
+                        <li class="sublink"><a href="#" class="sub">3</a>
+                            <ul class="subsubmenu">
+                                <li><a href="">1</a></li>
+                                <li><a href="">2</a></li>
+                                <li><a href="">3</a></li>
+                                <li><a href="">4</a></li>
+                            </ul>                           
+                        </li>
+                        <li><a href="#">4</a></li>
+                    </ul>
+                </li>
+                <li class="main-link"><a href="#">Тех обслуживание <span>/</span> ремонт</a>
+                    <ul class="submenu">
+                        <li><a href="#">Стоимость нормо-часа</a></li>
+                        <li><a href="#">Количество нормо-часа</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Акции <span>/</span> Новинки</a></li>
+                <li><a href="#">Контакты</a></li>
+                <div class="clear"></div>
+            </ul>
+        </div>
+    </div>
+
+    <div class="contacts-wrap">
+        <div class="contacts">
+            <h1>Контакты</h1>
+            <h2>8 800 200 60 60</h2>
+            <div class="clear"></div>
+            <p class="text">
+                <span>Lamborghini Diablo</span>  — <a href="#">суперкар,</a> выпускавшийся итальянской компанией Lamborghini в период 
+                    с 1990 года по 2001 год. Официальная презентация автомобиля состоялась 21 января 1990 года 
+                    в городе Монте-Карло.<br><br>
+
+                    Название Diablo означающее Дьявол в переводе на испанский язык принадлежало свирепому быку герцога Верагуа. Бык был убит во время корриды в Мадриде в 1869 году. Дизайн автомобиля имел черты основного стилевого направления 90-х годов, и делал автомобиль более изящным
+                    и утончённым в сравнении с моделями компании Lamborghini выпускавшимися ранее.
+            </p>
+            <div class="how">как проехать к части</div>
+        </div>
+    </div>
+
+<div class="map">
+
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+
+    <script>
+        var styles = [
+            {
+                stylers: [
+                    { "hue": "#615241" }
+                ]
+            }
+        ];
+        var map;
+        // var styledMap = new google.maps.StyledMapType(styles,{name: "Styled Map"});
+        var mapCoordinates = new google.maps.LatLng(55.764684, 37.595470);
+        var markerPosition = new google.maps.LatLng(55.764684, 37.595470);
+
+        var markers = [];
+        var image = new google.maps.MarkerImage( 'img/marker.png', // иконка
+                new google.maps.Size(41,46), // размеры иконок
+                new google.maps.Point(0,0)
+        );
+        function addMarker()
+        {
+            markers.push(new google.maps.Marker({
+                position: markerPosition,
+                raiseOnDrag: false,
+                icon: image,
+                map: map,
+                draggable: false
+            }));
+        }
+
+
+
+        function initialize()
+        {
+            var mapOptions = {
+                zoom: 17,
+                center: mapCoordinates,
+                disableDefaultUI: true,
+                mapTypeId: google.maps.MapTypeId.ROADMAP,
+            };
+            map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+            addMarker(); // вызов функции
+
+            map.setOptions({styles: styles});
+        }
+        google.maps.event.addDomListener(window, 'load', initialize);
+
+    </script>
+    <div id="map-canvas" style="height:480px"></div>
+
+</div>
+
+
+    <div class="footer-wrap">
+        <div class="footer">
+            <div class="first block">
+                <h1>быстрая навигация</h1>
+                <ul>
+                    <li><a href="#">Дополнительное оборудование</a></li>
+                    <li><a href="#">Тех обслуживание / ремонт</a></li>
+                    <li><a href="#">Акции / новинки</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="second block">
+                <h1>форма обратной связи</h1>
+                <form>
+                    <input type="text" placeholder="Имя">
+                    <input style="margin-top:7px;" type="text" placeholder="Телефон или e-mail">
+                    <textarea placeholder="Сообщение"></textarea>
+                    <input class="submit" type="submit" value="Отправить">
+                </form>
+            </div>
+            <div class="third block">
+                <h1>Контакты</h1>
+                <p>
+                    г. Москва. Ул. Новопетроская 19-1<br>
+                    Контактный телефон: 8 800 200 60 60
+                </p>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+
+    <div class="toTop" title="Вверх"></div>
+</body>
+</html>
